@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/northern_lights.png",
+    "alpha": "100",
+    "special": {
+        "background": "#060D19",
+        "foreground": "#a6e0cb",
+        "cursor": "#a6e0cb"
+    },
+    "colors": {
+        "color0": "#060D19",
+        "color1": "#3F9874",
+        "color2": "#90826F",
+        "color3": "#2E6D88",
+        "color4": "#4D768E",
+        "color5": "#309B8F",
+        "color6": "#58A58F",
+        "color7": "#a6e0cb",
+        "color8": "#749c8e",
+        "color9": "#3F9874",
+        "color10": "#90826F",
+        "color11": "#2E6D88",
+        "color12": "#4D768E",
+        "color13": "#309B8F",
+        "color14": "#58A58F",
+        "color15": "#a6e0cb"
+    }
+}

@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/jordi/.config/wallpapers/wallpaper_111.jpg"
+let background = "#0d0c12"
+let foreground = "#f0c4bf"
+let cursor     = "#f0c4bf"
+
+" Colors
+let color0  = "#0d0c12"
+let color1  = "#98354A"
+let color2  = "#CC3852"
+let color3  = "#A84959"
+let color4  = "#DE5E66"
+let color5  = "#F0867B"
+let color6  = "#E67D82"
+let color7  = "#f0c4bf"
+let color8  = "#a88985"
+let color9  = "#98354A"
+let color10 = "#CC3852"
+let color11 = "#A84959"
+let color12 = "#DE5E66"
+let color13 = "#F0867B"
+let color14 = "#E67D82"
+let color15 = "#f0c4bf"

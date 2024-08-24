@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/horizon-cafe.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d16",
+        "foreground": "#e0c2bd",
+        "cursor": "#e0c2bd"
+    },
+    "colors": {
+        "color0": "#0d0d16",
+        "color1": "#3F5981",
+        "color2": "#51658A",
+        "color3": "#687494",
+        "color4": "#9C7787",
+        "color5": "#78849D",
+        "color6": "#A08F98",
+        "color7": "#e0c2bd",
+        "color8": "#9c8784",
+        "color9": "#3F5981",
+        "color10": "#51658A",
+        "color11": "#687494",
+        "color12": "#9C7787",
+        "color13": "#78849D",
+        "color14": "#A08F98",
+        "color15": "#e0c2bd"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/tokyo-night.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#091115",
+        "foreground": "#c1c7cd",
+        "cursor": "#c1c7cd"
+    },
+    "colors": {
+        "color0": "#091115",
+        "color1": "#51646A",
+        "color2": "#A6595A",
+        "color3": "#37628B",
+        "color4": "#5B768A",
+        "color5": "#6E8D99",
+        "color6": "#6B98C1",
+        "color7": "#c1c7cd",
+        "color8": "#878b8f",
+        "color9": "#51646A",
+        "color10": "#A6595A",
+        "color11": "#37628B",
+        "color12": "#5B768A",
+        "color13": "#6E8D99",
+        "color14": "#6B98C1",
+        "color15": "#c1c7cd"
+    }
+}

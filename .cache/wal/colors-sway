@@ -1,0 +1,21 @@
+set $wallpaper /home/jordi/.config/wallpapers/wallpaper_111.jpg
+
+set $background #0d0c12
+set $foreground #f0c4bf
+
+set $color0 #0d0c12
+set $color1 #98354A
+set $color2 #CC3852
+set $color3 #A84959
+set $color4 #DE5E66
+set $color5 #F0867B
+set $color6 #E67D82
+set $color7 #f0c4bf
+set $color8 #a88985
+set $color9 #98354A
+set $color10 #CC3852
+set $color11 #A84959
+set $color12 #DE5E66
+set $color13 #F0867B
+set $color14 #E67D82
+set $color15 #f0c4bf

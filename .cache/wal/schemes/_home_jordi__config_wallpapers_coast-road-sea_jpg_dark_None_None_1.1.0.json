@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/coast-road-sea.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#12191e",
+        "foreground": "#e1e3e9",
+        "cursor": "#e1e3e9"
+    },
+    "colors": {
+        "color0": "#12191e",
+        "color1": "#687888",
+        "color2": "#77899A",
+        "color3": "#8F9FB1",
+        "color4": "#ACB5CA",
+        "color5": "#B9C4D6",
+        "color6": "#CCD0DF",
+        "color7": "#e1e3e9",
+        "color8": "#9d9ea3",
+        "color9": "#687888",
+        "color10": "#77899A",
+        "color11": "#8F9FB1",
+        "color12": "#ACB5CA",
+        "color13": "#B9C4D6",
+        "color14": "#CCD0DF",
+        "color15": "#e1e3e9"
+    }
+}
