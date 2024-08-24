@@ -1,0 +1,56 @@
+@import "/home/jordi/.cache/wal/colors-waybar.css";
+
+* {
+	background-image: none;
+	/* box-shadow: none; */
+    font-family: "JetBrainsMono Nerd Font", Arial;
+}
+
+window {
+	background: rgba(12, 12, 12, 0.6);
+}
+
+button {
+    border-radius: 50px;
+    margin: 5px;
+    color: #FFFFFF;
+    border: 5px solid #0E0E0E;
+    font-size: 16px;
+    background: #1E1E1E no-repeat center;
+    background-size: 25%;
+    transition: 0.4s;
+}
+
+button:focus, button:active {
+    background-color: @color1;
+    border: 5px solid @color1;
+}
+
+button:hover {
+    background-color: @color10;
+    border: 5px solid @color10;
+}
+
+#lock {
+    background-image: image(url("icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
