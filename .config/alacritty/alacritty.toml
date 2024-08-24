@@ -1,0 +1,15 @@
+# import = [
+#     # "~/.config/alacritty/themes/catppuccin_mocha.toml"
+#     "~/.config/alacritty/themes/citylights.toml"
+# ]
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "JetBrainsMonoNerdFont"
+style = "Regular"
+
+[window]
+padding = { x = 10, y = 10 }
+blur = true
