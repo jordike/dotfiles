@@ -1,0 +1,9 @@
+.menu-toggle {
+    background-color: @moduleBackground;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.menu-toggle-icon {
+    font-size: 22px;
+}

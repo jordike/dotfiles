@@ -1,0 +1,25 @@
+.calendar-window {
+    background-color: @background;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.calendar {
+    font-size: 14px;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.calendar:selected {
+    box-shadow: inset 0 -8px 0 0 @color1, inset 0 0 0 1px @color1;
+    border-radius: 50px;
+}
+
+.calendar.highlight,
+.calendar.button {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.calendar:indeterminate {
+    color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,22 @@
+@import "../components/notification.css";
+
+.notifications-toggle {
+    background-color: @moduleBackground;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.notifications-container {
+    padding: 20px;
+}
+
+.notifications-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#notifications-overview {
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 300px;
+}

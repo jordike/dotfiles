@@ -1,0 +1,29 @@
+.workspaces {
+    background-color: @moduleBackground;
+    border-radius: 50px;
+}
+
+.workspace {
+    all: unset;
+    background: transparent;
+    border-radius: 50px;
+    min-width: 15px;
+    min-height: 15px;
+    padding: 5px;
+}
+
+.workspace:not(:last-child) {
+    margin-right: 5px;
+}
+
+.workspace.occupied {
+    background-color: #2e2e2e;
+}
+
+.workspace.active {
+    background-color: @color1;
+}
+
+.workspace:hover {
+    background-color: @color3;
+}

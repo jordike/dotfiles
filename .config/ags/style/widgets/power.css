@@ -1,0 +1,11 @@
+.power {
+    font-size: 20px;
+}
+
+.power .power-button {
+    color: #d14038;
+}
+
+.power:hover {
+    color: white;
+}

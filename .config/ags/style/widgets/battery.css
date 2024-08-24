@@ -1,0 +1,21 @@
+.battery {
+    background-color: @moduleBackground;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.battery-icon {
+    color: @color1;
+}
+
+.battery-level {
+    margin-right: 5px;
+}
+
+.battery-progress {
+    min-width: 20px;
+    min-height: 20px;
+    font-size: 6px;
+    margin-left: 5px;
+    color: @color1;
+}

@@ -1,0 +1,19 @@
+.clock {
+    background-color: @moduleBackground;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.time {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.date {
+    margin-left: 5px;
+}
+
+.separator {
+    font-size: 20px;
+    color: #505050;
+}

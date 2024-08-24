@@ -1,0 +1,11 @@
+.currently-playing {
+    background-color: @moduleBackground;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.currently-playing-icon {
+    margin-right: 5px;
+    color: green;
+    font-size: 22px;
+}

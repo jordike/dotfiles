@@ -1,0 +1,10 @@
+.weather {
+    background-color: @moduleBackground;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.weather-icon {
+    font-size: 22px;
+    margin-right: 5px;
+}

@@ -1,0 +1,21 @@
+@import url("/home/jordi/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: "JetBrainsMonoNL Nerd Font";
+}
+
+window {
+    color: @foreground;
+    background-color: @background;
+}
+
+.bar > * {
+    padding: 4px;
+}
+
+tooltip {
+    background: @background;
+    color: @foreground;
+    padding: 5px 10px;
+    border-radius: 20px;
+}

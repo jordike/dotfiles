@@ -1,0 +1,10 @@
+.volume {
+    background-color: @moduleBackground;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.volume-icon {
+    margin-right: 5px;
+    font-size: 22px;
+}
