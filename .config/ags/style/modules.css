@@ -13,7 +13,12 @@
 @import "widgets/volume.css";
 @import "widgets/weather.css";
 @import "widgets/workspaces.css";
+@import "widgets/notifications_toggle.css";
+@import "widgets/next_event.css";
+
+@import "widgets/menu/menu.css";
 
 @import "windows/calendar.css";
 @import "windows/notification_overview.css";
-/* @import "windows/notification_popups.css"; */
+@import "windows/menu.css";
+@import "windows/notification_popups.css";

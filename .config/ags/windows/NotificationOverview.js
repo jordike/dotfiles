@@ -1,5 +1,8 @@
-const notifications = await Service.import("notifications");
+import HorizontalSeparator from "../components/HorizontalSeparator.js";
 import Notification from "../components/Notification.js";
+
+const notificationsService = await Service.import("notifications");
+const notifications = notificationsService.bind("notifications");
 
 export default function NotificationOverview() {
     return Widget.Window({
@@ -7,31 +10,41 @@ export default function NotificationOverview() {
         name: "notifications-overview",
         anchor: [ "top", "right" ],
         layer: "top",
-        margins: [
-            6
-        ],
+        margins: [ 6 ],
         child: Widget.Box({
             vertical: true,
             children: [
-                Widget.CenterBox({
-                    start_widget: Widget.Label({
-                        className: "notifications-title",
-                        label: "Notifications"
-                    }),
-                    end_widget: Widget.Button({
-                        className: "notifications-clear-all",
-                        child: Widget.Label({
-                            className: "notifications-clear-all-label",
-                            label: "Clear all"
+                Widget.Box({
+                    className: "notifications-header",
+                    hexpand: true,
+                    children: [
+                        Widget.Label({
+                            hexpand: true,
+                            className: "notifications-title",
+                            label: "Notifications",
+                            justification: "left",
+                            xalign: 0
+                        }),
+                        Widget.Button({
+                            className: "notifications-clear-all",
+                            onClicked: () => {
+                                for (const notification of notificationsService.notifications) {
+                                    notification.close();
+                                }
+                            },
+                            child: Widget.Label({
+                                className: "notifications-clear-all-label",
+                                label: "Clear all"
+                            })
                         })
-                    })
+                    ]
                 }),
-                Widget.Separator(),
-                // Widget.Label({
-                //     className: "no-notifications-label",
-                //     visible: notifications.bind("notifications").as(notifications => notifications.length === 0),
-                //     label: "There are no notifications."
-                // }),
+                HorizontalSeparator(),
+                Widget.Label({
+                    className: "no-notifications-label",
+                    visible: notifications.as(notifications => notifications.length === 0),
+                    label: "There are no notifications."
+                }),
                 Widget.Scrollable({
                     className: "notifications-container",
                     hscroll: "never",
@@ -40,7 +53,7 @@ export default function NotificationOverview() {
                     child: Widget.Box({
                         vertical: true,
                         className: "notifications-list",
-                        children: notifications.bind("notifications").as(notifications => notifications.map(Notification)),
+                        children: notifications.as(notifications => notifications.map(Notification)),
                     })
                 })
             ]

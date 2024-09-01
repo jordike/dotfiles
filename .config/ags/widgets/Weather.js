@@ -1,107 +1,22 @@
-const weatherIcon = Widget.Icon({
-    className: "weather-icon"
-});
+import weatherService from "../services/WeatherService.js";
 
-const temperatureLabel = Widget.Label({
-    className: "weather-temperature"
-});
+export default function Weather() {
+    const currentWeather = weatherService.bind("currentWeather");
 
-const spinner = Widget.Spinner({
-    name: "weather-spinner"
-});
-
-const weatherBox = Widget.Box({
-    className: "weather",
-    children: []
-});
-
-function getLocalIconPath(iconUrl) {
-    const segments = iconUrl.split("/");
-    const iconFilename = segments[segments.length - 1];
-
-    return "/home/jordi/.config/ags/icons/weather/" + iconFilename;
-}
-
-async function fetchWeather() {
-    try {
-        const response = await Utils.fetch("https://data.buienradar.nl/2.0/feed/json")
-
-        if (!response.ok) {
-            console.error("Failed to fetch weather data: " + response.status);
-
-            return {
-                available: false
-            }
-        }
-
-        const weatherData = await response.json()
-
-        const station = weatherData.actual.stationmeasurements.find(station => station.stationname === "Meetstation Volkel");
-
-        return {
-            available: true,
-            current: {
-                temperature: station.temperature.toString() + " °C",
-                icon: getLocalIconPath(station.iconurl)
-            }
-        };
-    } catch (exception) {
-        console.error(exception);
-
-        return {
-            available: false
-        }
-    }
-}
-
-function setLoading() {
-    weatherBox.children = [
-        spinner
-    ];
-}
-
-function unsetLoading() {
-    weatherBox.children = [
-        weatherIcon,
-        temperatureLabel
-    ];
-}
-
-function updateWeather() {
-    setLoading();
-
-    fetchWeather().then(weatherData => {
-        weatherBox.available = weatherData?.available ?? false;
-
-        if (!weatherData.available) {
-            weatherBox.children = [
-                Widget.Label({
+    return Widget.EventBox({
+        onPrimaryClick: () => App.toggleWindow("weather-overview"),
+        child: Widget.Box({
+            className: "weather",
+            children: [
+                Widget.Icon({
                     className: "weather-icon",
-                    label: "⚠",
-                    css: "color: yellow"
+                    icon: currentWeather.as(currentWeather => "/home/jordi/.config/ags/icons/weather/" + currentWeather?.iconName)
                 }),
                 Widget.Label({
                     className: "weather-temperature",
-                    label: "Weather unavailable"
+                    label: currentWeather.as(currentWeather => currentWeather?.temperature.toString() + " °C"?? "Unavailable")
                 })
-            ];
-
-            return;
-        }
-
-        weatherIcon.icon = weatherData.current.icon;
-        temperatureLabel.label = weatherData.current.temperature;
-
-        unsetLoading();
+            ]
+        })
     });
-}
-
-export default function Weather() {
-    const refreshIntervalMinutes = 5;
-
-    setInterval(updateWeather, refreshIntervalMinutes * 300 * 1000);
-
-    updateWeather();
-
-    return weatherBox;
 }

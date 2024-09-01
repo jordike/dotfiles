@@ -1,5 +1,9 @@
 @import "../components/notification.css";
 
+.notifications-container .notification {
+    background-color: @moduleBackground;
+}
+
 .notifications-toggle {
     background-color: @moduleBackground;
     padding: 0 10px;
@@ -7,7 +11,7 @@
 }
 
 .notifications-container {
-    padding: 20px;
+    padding: 10px;
 }
 
 .notifications-title {
@@ -19,4 +23,20 @@
     border-radius: 20px;
     padding: 20px;
     min-width: 300px;
+}
+
+.notifications-header {
+    padding: 10px;
+}
+
+.notifications-clear-all {
+    background-color: rgba(150, 150, 150, 0.1);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.notifications-clear-all-label {
+    padding: 0;
+    margin: 0;
+    all: unset;
 }

@@ -1,50 +1,49 @@
-import Separator from "../components/Separator.js";
+const pacmanUpdateCounter = Variable(0);
+const aurUpdateCounter = Variable(0);
+const totalCounter = Variable(0);
+const tooltip = Variable("");
 
-const updateInterval = 1000 * 60 * 10; // 10 minutes
-
-function PacmanUpdateCounter() {
-    return Widget.Box({
-        className: "pacman-updates",
-        tooltipText: "Pacman updates",
-        children: [
-            Widget.Label({
-                name: "pacman-icon",
-                className: "updates-icon",
-                label: "📦 "
-            }),
-            Widget.Label()
-                .poll(updateInterval, self => {
-                    self.label = Utils.exec('bash -c "checkupdates | wc -l"');
-                })
-        ]
-    });
+function updateTotalCounter() {
+    totalCounter.value = pacmanUpdateCounter.value + aurUpdateCounter.value;
+    tooltip.value = `Pacman updates:\t${pacmanUpdateCounter.value.toString()}\nAUR updates:\t${aurUpdateCounter.value.toString()}`;
 }
 
-function AurUpdateCounter() {
-    return Widget.Box({
-        className: "aur-updates",
-        tooltipText: "AUR updates",
-        children: [
-            Widget.Label({
-                name: "aur-icon",
-                className: "updates-icon",
-                label: "🚚 "
-            }),
-            Widget.Label()
-                .poll(updateInterval, self => {
-                    self.label = Utils.exec('bash -c "yay -Qum 2>/dev/null | wc -l"');
-                })
-        ]
-    });
+function updateCounters() {
+    Utils.execAsync('bash -c "checkupdates | wc -l"')
+        .then(counter => {
+            pacmanUpdateCounter.value = parseInt(counter);
+            updateTotalCounter();
+        })
+        .catch(exception => console.error(exception));
+
+    Utils.execAsync('bash -c "yay -Qum 2>/dev/null | wc -l"')
+        .then(counter => {
+            aurUpdateCounter.value = parseInt(counter);
+            updateTotalCounter();
+        })
+        .catch(exception => console.error(exception));
 }
 
 export default function Updates() {
+    Utils.interval(5000, updateCounters);
+
+    updateCounters();
+
     return Widget.Box({
         className: "update-counters",
+        tooltipText: tooltip.bind(),
         children: [
-            PacmanUpdateCounter(),
-            Separator(),
-            AurUpdateCounter()
+            Widget.Box({
+                children: [
+                    Widget.Label({
+                        className: "updates-icon",
+                        label: "🚚 "
+                    }),
+                    Widget.Label({
+                        label: totalCounter.bind().as(counter => counter.toString())
+                    })
+                ]
+            })
         ]
     });
 }

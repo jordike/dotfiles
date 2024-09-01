@@ -24,7 +24,7 @@ export default function Volume() {
                     }),
                     Widget.Label({
                         className: "volume-percentage",
-                        label: audio.speaker.bind("volume").as(volume => Math.round(volume * 100).toString() + "%")
+                        label: audio.speaker.bind("volume").as(volume => ` ${Math.round(volume * 100).toString()}%`)
                     })
                 ]
             })

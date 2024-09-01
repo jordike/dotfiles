@@ -5,6 +5,6 @@
 }
 
 .volume-icon {
-    margin-right: 5px;
     font-size: 22px;
+    color: @color1;
 }

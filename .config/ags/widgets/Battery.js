@@ -1,5 +1,3 @@
-import Separator from "../components/Separator.js";
-
 const battery = await Service.import("battery");
 
 function BatteryIcon() {
@@ -16,24 +14,12 @@ function BatteryLevel() {
     });
 }
 
-function BatteryProgress() {
-    return Widget.CircularProgress({
-        className: "battery-progress",
-        rounded: true,
-        value: battery.bind("percent").as(percentage => percentage > 0 ? percentage / 100 : 0),
-    })
-}
-
-// TODO: Add time remaining to tooltip
 export default function Battery() {
     return Widget.Box({
         className: "battery",
-        visible: battery.bind("available"),
         children: [
             BatteryIcon(),
             BatteryLevel(),
-            Separator(),
-            BatteryProgress()
         ]
     });
 }

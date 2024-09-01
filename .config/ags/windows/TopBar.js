@@ -38,6 +38,13 @@ function BarRight() {
         hpack: "end",
         children: [
             NextEvent(),
+            Separator(),
+            Weather(),
+            Separator(),
+            Volume(),
+            Separator(),
+            Updates(),
+            Separator(),
             Widget.Box({
                 visible: battery.bind("available"),
                 children: [
@@ -45,12 +52,6 @@ function BarRight() {
                     Separator(),
                 ]
             }),
-            Weather(),
-            Separator(),
-            Volume(),
-            Separator(),
-            Updates(),
-            Separator(),
             Notifications(),
             Separator(),
             MenuToggle(),
@@ -61,7 +62,7 @@ function BarRight() {
 }
 
 export default function TopBar() {
-    return TopBar = Widget.Window({
+    return Widget.Window({
         name: "top_bar",
         className: "bar",
         anchor: [ "top", "left", "right" ],

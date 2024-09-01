@@ -11,6 +11,8 @@ import VolumeSlider from "../widgets/menu/VolumeSlider.js";
 import Cpu from "../widgets/menu/Cpu.js";
 import Memory from "../widgets/menu/Memory.js";
 import SystemTemperature from "../widgets/menu/SystemTemperature.js";
+import ToggleLayoutMode from "../widgets/menu/ToggleLayoutMode.js";
+import Brightness from "../widgets/menu/Brightness.js";
 
 export default function Menu() {
     return Widget.Window({
@@ -18,38 +20,47 @@ export default function Menu() {
         anchor: [ "top", "right" ],
         layer: "top",
         visible: false,
+        margins: [ 6 ],
         child: Widget.Box({
             vertical: true,
+            hexpand: true,
             children: [
                 Widget.Box({
+                    hexpand: true,
                     children: [
                         // ProfilePicture(),
                         // Separator(),
                         QuickLock(),
+                        ToggleLayoutMode(),
                         Settings(),
                         IdleInhibitor()
                     ]
                 }),
                 Widget.Box({
                     vertical: true,
+                    hexpand: true,
                     children: [
-                        VolumeSlider()
+                        VolumeSlider(),
+                        Brightness()
                     ]
                 }),
                 HorizontalSeparator(),
                 Widget.Box({
+                    hexpand: true,
                     children: [
                         Bluetooth(),
                         Network(),
                     ]
                 }),
                 Widget.Box({
+                    hexpand: true,
                     children: [
                         PowerProfiles()
                     ]
                 }),
                 HorizontalSeparator(),
                 Widget.Box({
+                    hexpand: true,
                     vertical: true,
                     children: [
                         Cpu(),

@@ -1,10 +1,11 @@
-.menu-toggle {
+.next-event {
     background-color: @moduleBackground;
     padding: 0 10px;
     border-radius: 20px;
 }
 
-.menu-toggle-icon {
-    font-size: 22px;
+.next-event-icon {
     color: @color1;
+    font-size: 22px;
+    margin-right: 5px;
 }

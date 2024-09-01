@@ -1,3 +1,5 @@
+import Separator from "./Separator.js";
+
 function NotificationIcon({ app_entry, app_icon, image }) {
     if (image) {
         return Widget.Box({
@@ -24,67 +26,87 @@ function NotificationIcon({ app_entry, app_icon, image }) {
 }
 
 export default function Notification(notification) {
-    const icon = Widget.Box({
-        vpack: "start",
-        className: "notification-icon",
-        child: NotificationIcon(notification),
-    });
+    let time = new Date(0);
+    time.setUTCSeconds(notification.time);
 
-    const title = Widget.Label({
-        className: "notification-title",
-        xalign: 0,
-        justification: "left",
-        hexpand: true,
-        maxWidthChars: 24,
-        truncate: "end",
-        wrap: true,
-        label: notification.summary,
-        useMarkup: true,
-        tooltipText: notification.summary
-    });
+    function timeFormat(number) {
+        return number < 10 ? `0${number}` : number;
+    }
 
-    const body = Widget.Label({
-        className: "notification-body",
-        hexpand: true,
-        useMarkup: true,
-        xalign: 0,
-        justification: "left",
-        label: notification.body,
-        wrap: true,
-    });
-
-    const actions = Widget.Box({
-        className: "actions",
-        children: notification.actions.map(({ id, label }) => Widget.Button({
-            className: "action-button",
-            onClicked: () => {
-                notification.invoke(id);
-                notification.close();
-            },
-            hexpand: true,
-            child: Widget.Label({
-                label: label
-            }),
-        })),
-    });
+    const timeLabel = `${timeFormat(time.getHours())}:${timeFormat(time.getMinutes())}`;
+    const timeTooltip = `${time.getDate()}-${time.getMonth()}-${time.getFullYear()} ${timeFormat(time.getHours())}:${timeFormat(time.getMinutes())}:${timeFormat(time.getSeconds())}`;
 
     return Widget.Box({
-        className: `notification ${notification.urgency}`,
-        vertical: true,
+        className: "notification",
+        attribute: {
+            id: notification.id
+        },
         children: [
             Widget.Box({
+                className: "notification-icon",
+                child: NotificationIcon(notification)
+            }),
+            Widget.Box({
+                className: "notification-content",
+                vertical: true,
                 children: [
-                    icon,
                     Widget.Box({
-                        vertical: true,
+                        className: "notification-header",
+                        hexpand: true,
                         children: [
-                            title,
-                            body,
+                            Widget.Label({
+                                className: "notification-title",
+                                hexpand: true,
+                                xalign: 0,
+                                maxWidthChars: 24,
+                                truncate: "end",
+                                wrap: true,
+                                justification: "left",
+                                label: notification.summary.trim(),
+                                tooltipText: notification.summary.trim()
+                            }),
+                            Separator(),
+                            Widget.Label({
+                                className: "notification-time",
+                                label: timeLabel,
+                                tooltipText: timeTooltip
+                            }),
+                            Separator(),
+                            Widget.Button({
+                                className: "notification-close",
+                                onClicked: () => notification.close(),
+                                child: Widget.Label({
+                                    label: "X"
+                                })
+                            })
                         ]
+                    }),
+                    Widget.Label({
+                        className: "notification-body",
+                        label: notification.body,
+                        justification: "left",
+                        wrap: true,
+                        xalign: 0,
+                        useMarkup: true
+                    }),
+                    Widget.Box({
+                        className: "notification-actions",
+                        children: notification.actions.map(action => {
+                            return Widget.Button({
+                                className: "notification-action",
+                                onClicked: () => {
+                                    notification.invoke(action.id);
+                                    notification.close();
+                                },
+                                hexpand: true,
+                                child: Widget.Label({
+                                    label: action.label
+                                })
+                            });
+                        })
                     })
                 ]
-            }),
-            actions,
+            })
         ]
     });
 }
