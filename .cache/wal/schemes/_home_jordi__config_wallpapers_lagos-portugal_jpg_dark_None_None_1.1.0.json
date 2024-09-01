@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/lagos-portugal.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#16191b",
+        "foreground": "#d4cbc1",
+        "cursor": "#d4cbc1"
+    },
+    "colors": {
+        "color0": "#16191b",
+        "color1": "#5E655A",
+        "color2": "#886F3B",
+        "color3": "#927558",
+        "color4": "#72827A",
+        "color5": "#A48B69",
+        "color6": "#CA9D73",
+        "color7": "#d4cbc1",
+        "color8": "#948e87",
+        "color9": "#5E655A",
+        "color10": "#886F3B",
+        "color11": "#927558",
+        "color12": "#72827A",
+        "color13": "#A48B69",
+        "color14": "#CA9D73",
+        "color15": "#d4cbc1"
+    }
+}

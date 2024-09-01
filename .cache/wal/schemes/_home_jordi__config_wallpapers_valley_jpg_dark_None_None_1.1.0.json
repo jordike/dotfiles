@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/valley.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#09060a",
+        "foreground": "#99bfc9",
+        "cursor": "#99bfc9"
+    },
+    "colors": {
+        "color0": "#09060a",
+        "color1": "#EE5E2E",
+        "color2": "#AF4F47",
+        "color3": "#D28066",
+        "color4": "#2A738A",
+        "color5": "#597887",
+        "color6": "#68929D",
+        "color7": "#99bfc9",
+        "color8": "#6b858c",
+        "color9": "#EE5E2E",
+        "color10": "#AF4F47",
+        "color11": "#D28066",
+        "color12": "#2A738A",
+        "color13": "#597887",
+        "color14": "#68929D",
+        "color15": "#99bfc9"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/house-light-windows-winter-snowdrifts-logs.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0a09",
+        "foreground": "#cbc3a9",
+        "cursor": "#cbc3a9"
+    },
+    "colors": {
+        "color0": "#0c0a09",
+        "color1": "#453E42",
+        "color2": "#504646",
+        "color3": "#6C6257",
+        "color4": "#9D6425",
+        "color5": "#88765F",
+        "color6": "#728D72",
+        "color7": "#cbc3a9",
+        "color8": "#8e8876",
+        "color9": "#453E42",
+        "color10": "#504646",
+        "color11": "#6C6257",
+        "color12": "#9D6425",
+        "color13": "#88765F",
+        "color14": "#728D72",
+        "color15": "#cbc3a9"
+    }
+}

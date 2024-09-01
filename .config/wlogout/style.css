@@ -8,6 +8,7 @@
 
 window {
 	background: rgba(12, 12, 12, 0.6);
+    border: none;
 }
 
 button {
@@ -19,16 +20,17 @@ button {
     background: #1E1E1E no-repeat center;
     background-size: 25%;
     transition: 0.4s;
+    box-shadow: none;
 }
 
 button:focus, button:active {
     background-color: @color1;
-    border: 5px solid @color1;
+    border: 5px solid @color10;
 }
 
 button:hover {
-    background-color: @color10;
-    border: 5px solid @color10;
+    background-color: @color3;
+    border: 5px solid @color4;
 }
 
 #lock {

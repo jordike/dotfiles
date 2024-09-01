@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/thunderstorm-sea.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0B1010",
+        "foreground": "#adbec3",
+        "cursor": "#adbec3"
+    },
+    "colors": {
+        "color0": "#0B1010",
+        "color1": "#3A636E",
+        "color2": "#4F656A",
+        "color3": "#4E6B72",
+        "color4": "#6F817E",
+        "color5": "#5C7B84",
+        "color6": "#6E8A90",
+        "color7": "#adbec3",
+        "color8": "#798588",
+        "color9": "#3A636E",
+        "color10": "#4F656A",
+        "color11": "#4E6B72",
+        "color12": "#6F817E",
+        "color13": "#5C7B84",
+        "color14": "#6E8A90",
+        "color15": "#adbec3"
+    }
+}

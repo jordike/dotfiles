@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/matterhorn-glacier.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#12121e",
+        "foreground": "#e6ccd9",
+        "cursor": "#e6ccd9"
+    },
+    "colors": {
+        "color0": "#12121e",
+        "color1": "#B58CB9",
+        "color2": "#D699B8",
+        "color3": "#E1A3BC",
+        "color4": "#A39AC4",
+        "color5": "#B0ABCD",
+        "color6": "#CB9AC4",
+        "color7": "#e6ccd9",
+        "color8": "#a18e97",
+        "color9": "#B58CB9",
+        "color10": "#D699B8",
+        "color11": "#E1A3BC",
+        "color12": "#A39AC4",
+        "color13": "#B0ABCD",
+        "color14": "#CB9AC4",
+        "color15": "#e6ccd9"
+    }
+}

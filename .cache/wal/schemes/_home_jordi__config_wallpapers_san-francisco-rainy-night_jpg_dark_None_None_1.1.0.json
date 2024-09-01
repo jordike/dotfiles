@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/san-francisco-rainy-night.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0a0b",
+        "foreground": "#acc7dc",
+        "cursor": "#acc7dc"
+    },
+    "colors": {
+        "color0": "#0b0a0b",
+        "color1": "#907568",
+        "color2": "#CD9771",
+        "color3": "#395E88",
+        "color4": "#5F738A",
+        "color5": "#837E82",
+        "color6": "#668EAE",
+        "color7": "#acc7dc",
+        "color8": "#788b9a",
+        "color9": "#907568",
+        "color10": "#CD9771",
+        "color11": "#395E88",
+        "color12": "#5F738A",
+        "color13": "#837E82",
+        "color14": "#668EAE",
+        "color15": "#acc7dc"
+    }
+}

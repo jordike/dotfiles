@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/island-sunny.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#22210c",
+        "foreground": "#e1eae2",
+        "cursor": "#e1eae2"
+    },
+    "colors": {
+        "color0": "#22210c",
+        "color1": "#F4B469",
+        "color2": "#FBCB76",
+        "color3": "#326F97",
+        "color4": "#47BFBE",
+        "color5": "#E6B697",
+        "color6": "#B2DFDD",
+        "color7": "#e1eae2",
+        "color8": "#9da39e",
+        "color9": "#F4B469",
+        "color10": "#FBCB76",
+        "color11": "#326F97",
+        "color12": "#47BFBE",
+        "color13": "#E6B697",
+        "color14": "#B2DFDD",
+        "color15": "#e1eae2"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/miami-florida-usa-downtown-sea-ocean-water-sky-clouds.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#2d2545",
+        "foreground": "#f6eae1",
+        "cursor": "#f6eae1"
+    },
+    "colors": {
+        "color0": "#2d2545",
+        "color1": "#9FA2A9",
+        "color2": "#E09F98",
+        "color3": "#D6C6B9",
+        "color4": "#FDD0B5",
+        "color5": "#B8B9C3",
+        "color6": "#FBDAC6",
+        "color7": "#f6eae1",
+        "color8": "#aca39d",
+        "color9": "#9FA2A9",
+        "color10": "#E09F98",
+        "color11": "#D6C6B9",
+        "color12": "#FDD0B5",
+        "color13": "#B8B9C3",
+        "color14": "#FBDAC6",
+        "color15": "#f6eae1"
+    }
+}

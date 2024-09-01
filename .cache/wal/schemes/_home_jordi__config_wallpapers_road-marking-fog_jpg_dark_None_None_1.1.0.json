@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/road-marking-fog.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#181511",
+        "foreground": "#dadddb",
+        "cursor": "#dadddb"
+    },
+    "colors": {
+        "color0": "#181511",
+        "color1": "#7C8378",
+        "color2": "#948874",
+        "color3": "#9DA194",
+        "color4": "#AFB5AB",
+        "color5": "#BDC1B9",
+        "color6": "#C3C4BB",
+        "color7": "#dadddb",
+        "color8": "#989a99",
+        "color9": "#7C8378",
+        "color10": "#948874",
+        "color11": "#9DA194",
+        "color12": "#AFB5AB",
+        "color13": "#BDC1B9",
+        "color14": "#C3C4BB",
+        "color15": "#dadddb"
+    }
+}

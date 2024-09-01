@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallpaper_16.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0909",
+        "foreground": "#d1d6db",
+        "cursor": "#d1d6db"
+    },
+    "colors": {
+        "color0": "#0c0909",
+        "color1": "#5B6471",
+        "color2": "#8A6E57",
+        "color3": "#5C6C82",
+        "color4": "#6E7886",
+        "color5": "#7A8592",
+        "color6": "#949DA8",
+        "color7": "#d1d6db",
+        "color8": "#929599",
+        "color9": "#5B6471",
+        "color10": "#8A6E57",
+        "color11": "#5C6C82",
+        "color12": "#6E7886",
+        "color13": "#7A8592",
+        "color14": "#949DA8",
+        "color15": "#d1d6db"
+    }
+}

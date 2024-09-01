@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/norway-beautiful-scenery.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#060A11",
+        "foreground": "#c1cfe4",
+        "cursor": "#c1cfe4"
+    },
+    "colors": {
+        "color0": "#060A11",
+        "color1": "#5F5E5B",
+        "color2": "#847C71",
+        "color3": "#086692",
+        "color4": "#5D739F",
+        "color5": "#398AB2",
+        "color6": "#6B99CC",
+        "color7": "#c1cfe4",
+        "color8": "#87909f",
+        "color9": "#5F5E5B",
+        "color10": "#847C71",
+        "color11": "#086692",
+        "color12": "#5D739F",
+        "color13": "#398AB2",
+        "color14": "#6B99CC",
+        "color15": "#c1cfe4"
+    }
+}

@@ -109,3 +109,5 @@ source $ZSH/oh-my-zsh.sh
 (cat ~/.cache/wal/sequences &)
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+export WLR_NO_HARDWARE_CURSORS=1

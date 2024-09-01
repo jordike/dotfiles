@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/Island-Night.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#08141E",
+        "foreground": "#9bbfb9",
+        "cursor": "#9bbfb9"
+    },
+    "colors": {
+        "color0": "#08141E",
+        "color1": "#224975",
+        "color2": "#4D666F",
+        "color3": "#1B5686",
+        "color4": "#186693",
+        "color5": "#296890",
+        "color6": "#467596",
+        "color7": "#9bbfb9",
+        "color8": "#6c8581",
+        "color9": "#224975",
+        "color10": "#4D666F",
+        "color11": "#1B5686",
+        "color12": "#186693",
+        "color13": "#296890",
+        "color14": "#467596",
+        "color15": "#9bbfb9"
+    }
+}

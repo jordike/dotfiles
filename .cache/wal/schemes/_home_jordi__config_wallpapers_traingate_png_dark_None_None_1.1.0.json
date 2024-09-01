@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/traingate.png",
+    "alpha": "100",
+    "special": {
+        "background": "#091312",
+        "foreground": "#e7c89f",
+        "cursor": "#e7c89f"
+    },
+    "colors": {
+        "color0": "#091312",
+        "color1": "#335765",
+        "color2": "#4F4C4F",
+        "color3": "#685A55",
+        "color4": "#47636A",
+        "color5": "#C2743F",
+        "color6": "#98674F",
+        "color7": "#e7c89f",
+        "color8": "#a18c6f",
+        "color9": "#335765",
+        "color10": "#4F4C4F",
+        "color11": "#685A55",
+        "color12": "#47636A",
+        "color13": "#C2743F",
+        "color14": "#98674F",
+        "color15": "#e7c89f"
+    }
+}

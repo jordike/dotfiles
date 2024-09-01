@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/blackhole.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030408",
+        "foreground": "#c7cde0",
+        "cursor": "#c7cde0"
+    },
+    "colors": {
+        "color0": "#030408",
+        "color1": "#8D6175",
+        "color2": "#355090",
+        "color3": "#5C6899",
+        "color4": "#907491",
+        "color5": "#708FC5",
+        "color6": "#A6A5C3",
+        "color7": "#c7cde0",
+        "color8": "#8b8f9c",
+        "color9": "#8D6175",
+        "color10": "#355090",
+        "color11": "#5C6899",
+        "color12": "#907491",
+        "color13": "#708FC5",
+        "color14": "#A6A5C3",
+        "color15": "#c7cde0"
+    }
+}

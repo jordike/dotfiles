@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/hut-water-slope.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0C0F11",
+        "foreground": "#d4c8a4",
+        "cursor": "#d4c8a4"
+    },
+    "colors": {
+        "color0": "#0C0F11",
+        "color1": "#1F3C43",
+        "color2": "#253D44",
+        "color3": "#324C52",
+        "color4": "#3D5962",
+        "color5": "#565E57",
+        "color6": "#926F47",
+        "color7": "#d4c8a4",
+        "color8": "#948c72",
+        "color9": "#1F3C43",
+        "color10": "#253D44",
+        "color11": "#324C52",
+        "color12": "#3D5962",
+        "color13": "#565E57",
+        "color14": "#926F47",
+        "color15": "#d4c8a4"
+    }
+}

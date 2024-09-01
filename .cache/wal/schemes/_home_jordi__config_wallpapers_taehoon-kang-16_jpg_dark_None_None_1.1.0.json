@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/taehoon-kang-16.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b151d",
+        "foreground": "#c9dfef",
+        "cursor": "#c9dfef"
+    },
+    "colors": {
+        "color0": "#1b151d",
+        "color1": "#3A5794",
+        "color2": "#626894",
+        "color3": "#91738F",
+        "color4": "#71A3D3",
+        "color5": "#9E97A5",
+        "color6": "#BCB8BD",
+        "color7": "#c9dfef",
+        "color8": "#8c9ca7",
+        "color9": "#3A5794",
+        "color10": "#626894",
+        "color11": "#91738F",
+        "color12": "#71A3D3",
+        "color13": "#9E97A5",
+        "color14": "#BCB8BD",
+        "color15": "#c9dfef"
+    }
+}

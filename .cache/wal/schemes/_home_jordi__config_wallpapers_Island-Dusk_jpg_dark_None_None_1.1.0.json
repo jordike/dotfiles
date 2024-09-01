@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/Island-Dusk.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#15181c",
+        "foreground": "#c5c7bc",
+        "cursor": "#c5c7bc"
+    },
+    "colors": {
+        "color0": "#15181c",
+        "color1": "#DEAE6F",
+        "color2": "#CAAC71",
+        "color3": "#537B8E",
+        "color4": "#588599",
+        "color5": "#6E8F97",
+        "color6": "#5F8CA2",
+        "color7": "#c5c7bc",
+        "color8": "#898b83",
+        "color9": "#DEAE6F",
+        "color10": "#CAAC71",
+        "color11": "#537B8E",
+        "color12": "#588599",
+        "color13": "#6E8F97",
+        "color14": "#5F8CA2",
+        "color15": "#c5c7bc"
+    }
+}

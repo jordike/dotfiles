@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/queensboro-bridge.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1310",
+        "foreground": "#e3dfe1",
+        "cursor": "#e3dfe1"
+    },
+    "colors": {
+        "color0": "#0c1310",
+        "color1": "#70716E",
+        "color2": "#887972",
+        "color3": "#8A837C",
+        "color4": "#A59C9A",
+        "color5": "#C6B6B4",
+        "color6": "#C9BFC0",
+        "color7": "#e3dfe1",
+        "color8": "#9e9c9d",
+        "color9": "#70716E",
+        "color10": "#887972",
+        "color11": "#8A837C",
+        "color12": "#A59C9A",
+        "color13": "#C6B6B4",
+        "color14": "#C9BFC0",
+        "color15": "#e3dfe1"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/Island-Day(1).jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1c2722",
+        "foreground": "#c5dedd",
+        "cursor": "#c5dedd"
+    },
+    "colors": {
+        "color0": "#1c2722",
+        "color1": "#4396BD",
+        "color2": "#58A3A9",
+        "color3": "#63C8A2",
+        "color4": "#4B9FC1",
+        "color5": "#50AFC3",
+        "color6": "#6CCAC7",
+        "color7": "#c5dedd",
+        "color8": "#899b9a",
+        "color9": "#4396BD",
+        "color10": "#58A3A9",
+        "color11": "#63C8A2",
+        "color12": "#4B9FC1",
+        "color13": "#50AFC3",
+        "color14": "#6CCAC7",
+        "color15": "#c5dedd"
+    }
+}

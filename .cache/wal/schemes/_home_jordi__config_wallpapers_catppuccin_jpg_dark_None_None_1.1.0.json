@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/catppuccin.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0911",
+        "foreground": "#dfd8d4",
+        "cursor": "#dfd8d4"
+    },
+    "colors": {
+        "color0": "#0a0911",
+        "color1": "#575367",
+        "color2": "#5C5667",
+        "color3": "#757286",
+        "color4": "#877A80",
+        "color5": "#92788C",
+        "color6": "#9D97A1",
+        "color7": "#dfd8d4",
+        "color8": "#9c9794",
+        "color9": "#575367",
+        "color10": "#5C5667",
+        "color11": "#757286",
+        "color12": "#877A80",
+        "color13": "#92788C",
+        "color14": "#9D97A1",
+        "color15": "#dfd8d4"
+    }
+}

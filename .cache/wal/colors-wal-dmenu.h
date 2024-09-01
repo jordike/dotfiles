@@ -1,6 +1,6 @@
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#f0c4bf", "#0d0c12" },
-	[SchemeSel] = { "#f0c4bf", "#98354A" },
-	[SchemeOut] = { "#f0c4bf", "#E67D82" },
+	[SchemeNorm] = { "#d1cecf", "#111010" },
+	[SchemeSel] = { "#d1cecf", "#36688F" },
+	[SchemeOut] = { "#d1cecf", "#739EC5" },
 };
