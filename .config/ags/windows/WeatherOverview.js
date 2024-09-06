@@ -1,4 +1,3 @@
-import HorizontalSeparator from "../components/HorizontalSeparator.js";
 import weatherService from "../services/WeatherService.js";
 
 const useCelcius = Variable(true);
@@ -22,7 +21,7 @@ function CurrentWeather() {
                 icon: weatherIcon.bind()
             }),
             Widget.Label({
-                label: temperature.bind()
+                label: weatherService.bind("currentWeather").as(weather => weather.temperature)
             }),
             Widget.Button({
                 onClicked: () => useCelcius.value = !useCelcius.value,
@@ -34,30 +33,39 @@ function CurrentWeather() {
     })
 }
 
-function HourlyWeatherOverview() {
-    return Widget.Box({
-    });
-}
-
 function WeatherWeekOverview() {
+    const weekOverview = weatherService.bind("weekForecast");
+
     return Widget.Box({
+        vertical: true,
+        children: weekOverview.as(overview => overview.forecasts.map(forecast => {
+            return Widget.Box({
+                children: [
+                    Widget.Label({
+                        label: "icon"
+                    }),
+                    Widget.Label({
+                        label: forecast.minimumTemperature.minimum
+                    })
+                ]
+            })
+        }))
     });
 }
 
 export default function WeatherOverview() {
     return Widget.Window({
         name: "weather-overview",
-        className: "weather",
+        className: "weather-overview",
         anchor: [ "top" ],
         layer: "top",
         margins: [ 6, 0, 0, 0 ],
         visible: false,
         child: Widget.Box({
-            vertical: true,
             children: [
+                WeatherWeekOverview(),
+                Widget.Separator(),
                 CurrentWeather(),
-                HorizontalSeparator(),
-                WeatherWeekOverview()
             ]
         })
     });

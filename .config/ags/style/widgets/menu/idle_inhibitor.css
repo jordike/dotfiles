@@ -1,7 +1,7 @@
-.toggle-layout {
+.idle-inhibitor-button {
     background-color: @moduleBackground;
-    min-width: 10px;
-    min-height: 10px;
     border-radius: 50px;
+    min-width: 20px;
+    min-height: 20px;
     padding: 5px;
 }

@@ -2,24 +2,90 @@
     background-color: @background;
     border-radius: 20px;
     padding: 20px;
+    border: 1px solid #202020;
 }
 
-.calendar {
-    font-size: 14px;
+.calendar calendar {
+    all: unset;
+    font-size: 20px;
     padding: 5px;
-    font-weight: normal;
+}
+
+.calendar .button {
+    all: unset;
+    border-radius: 5px;
+}
+
+.calendar .button {
+    transition: background-color 1s;
 }
 
 .calendar:selected {
-    box-shadow: inset 0 -8px 0 0 @color1, inset 0 0 0 1px @color1;
-    border-radius: 50px;
+    /* box-shadow: inset 0 -6px 0 0 @color1, inset 0 6px 0 0 @color1; */
+    /* box-shadow: inset 0 -6px 0 2px @color1; */
+    /* box-shadow: inset 0 -4px 0 0 @color1, inset 0 0 0 2px @color1; */
+    background-color: @color1;
+    border-radius: 100px;
 }
 
 .calendar.highlight,
 .calendar.button {
     color: rgba(255, 255, 255, 0.6);
+    padding: 0;
 }
 
 .calendar:indeterminate {
     color: rgba(255, 255, 255, 0.2);
+}
+
+.timezones {
+    background-color: @moduleBackground;
+    /* border-radius: 20px; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.foreign-timezones {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foreign-timezone {
+    background-color: rgba(80, 80, 80, 0.2);
+    margin: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.foreign-timezone .foreign-timezone-label {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.foreign-timezone .foreign-timezone-time {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.current-timezone {
+    padding: 20px;
+}
+
+.calendar-time {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.calendar-date {
+    font-size: 20px;
+}
+
+.calendar-button-row {
+    padding: 10px;
+}
+
+.calendar-today-button {
+    background-color: @moduleBackground;
+    padding: 5px 10px;
+    border-radius: 20px;
 }

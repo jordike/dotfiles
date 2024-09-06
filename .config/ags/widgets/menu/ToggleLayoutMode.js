@@ -20,9 +20,10 @@ function toggleLayout() {
 export default function ToggleLayoutMode() {
     return Widget.Button({
         className: "toggle-layout",
+        tooltipText: "Toggle layout mode",
         onClicked: toggleLayout,
         child: Widget.Label({
-            className: "toggle-layout-icon",
+            className: "icon toggle-layout-icon",
             label: "🗺",
         })
     });

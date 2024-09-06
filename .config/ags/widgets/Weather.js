@@ -9,7 +9,7 @@ export default function Weather() {
             className: "weather",
             children: [
                 Widget.Icon({
-                    className: "weather-icon",
+                    className: "icon weather-icon",
                     icon: currentWeather.as(currentWeather => "/home/jordi/.config/ags/icons/weather/" + currentWeather?.iconName)
                 }),
                 Widget.Label({

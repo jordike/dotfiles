@@ -10,7 +10,7 @@ export default function Volume() {
                 className: "volume",
                 children: [
                     Widget.Icon({
-                        className: "volume-icon"
+                        className: "icon volume-icon"
                     }).hook(audio.speaker, self => {
                         const icon = [
                             [101, 'overamplified'],

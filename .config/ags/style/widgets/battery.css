@@ -4,10 +4,6 @@
     border-radius: 20px;
 }
 
-.battery-icon {
-    color: @color1;
-}
-
 .battery-level {
     margin-right: 5px;
 }

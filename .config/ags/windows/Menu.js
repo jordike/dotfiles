@@ -3,7 +3,6 @@ import QuickLock from "../widgets/menu/QuickLock.js";
 import Settings from "../widgets/menu/Settings.js";
 import ProfilePicture from "../widgets/ProfilePicture.js";
 import Separator from "../components/Separator.js"
-import HorizontalSeparator from "../components/HorizontalSeparator.js";
 import Bluetooth from "../widgets/menu/Bluetooth.js";
 import Network from "../widgets/menu/Network.js";
 import PowerProfiles from "../widgets/menu/PowerProfiles.js";
@@ -22,6 +21,7 @@ export default function Menu() {
         visible: false,
         margins: [ 6 ],
         child: Widget.Box({
+            className: "menu-container",
             vertical: true,
             hexpand: true,
             children: [
@@ -44,7 +44,7 @@ export default function Menu() {
                         Brightness()
                     ]
                 }),
-                HorizontalSeparator(),
+                Widget.Separator(),
                 Widget.Box({
                     hexpand: true,
                     children: [
@@ -58,7 +58,7 @@ export default function Menu() {
                         PowerProfiles()
                     ]
                 }),
-                HorizontalSeparator(),
+                Widget.Separator(),
                 Widget.Box({
                     hexpand: true,
                     vertical: true,

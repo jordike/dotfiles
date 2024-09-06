@@ -3,8 +3,8 @@ export default function NextEvent() {
         className: "next-event",
         children: [
             Widget.Label({
-                className: "next-event-icon",
-                label: "📅 "
+                className: "icon next-event-icon",
+                label: "📅"
             }),
             Widget.Label({
                 className: "next-event-label",

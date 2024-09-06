@@ -3,11 +3,11 @@
     border-radius: 20px;
     padding: 0 10px;
 }
-
-.update-counters .updates-icon {
-    font-size: 14px;
-    color: @color1;
-}
+/**/
+/* .update-counters .updates-icon { */
+/*     font-size: 14px; */
+/*     color: @color1; */
+/* } */
 
 .pacman-updates {
     margin-right: 5px;

@@ -36,7 +36,7 @@ export default function Updates() {
             Widget.Box({
                 children: [
                     Widget.Label({
-                        className: "updates-icon",
+                        className: "icon updates-icon",
                         label: "🚚 "
                     }),
                     Widget.Label({

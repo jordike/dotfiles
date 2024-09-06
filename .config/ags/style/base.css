@@ -19,3 +19,20 @@ tooltip {
     padding: 5px 10px;
     border-radius: 20px;
 }
+
+.icon {
+    color: @color1;
+    font-size: 22px;
+}
+
+separator {
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+separator.vertical {
+    margin: 10px 0;
+}
+
+separator.horizontal {
+    margin: 0 10px;
+}

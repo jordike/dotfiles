@@ -10,7 +10,7 @@ export default function Notifications() {
             className: "notifications-toggle",
             children: [
                 Widget.Label({
-                    className: "notifications-icon",
+                    className: "icon notifications-icon",
                     label: "📰 "
                 }),
                 Widget.Label({

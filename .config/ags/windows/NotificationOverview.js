@@ -1,4 +1,3 @@
-import HorizontalSeparator from "../components/HorizontalSeparator.js";
 import Notification from "../components/Notification.js";
 
 const notificationsService = await Service.import("notifications");
@@ -39,7 +38,7 @@ export default function NotificationOverview() {
                         })
                     ]
                 }),
-                HorizontalSeparator(),
+                Widget.Separator(),
                 Widget.Label({
                     className: "no-notifications-label",
                     visible: notifications.as(notifications => notifications.length === 0),

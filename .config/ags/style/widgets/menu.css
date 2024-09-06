@@ -5,6 +5,5 @@
 }
 
 .menu-toggle-icon {
-    font-size: 22px;
-    color: @color1;
+    margin-right: 2px;
 }

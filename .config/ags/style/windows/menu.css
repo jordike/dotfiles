@@ -1,0 +1,10 @@
+#menu {
+    border-radius: 20px;
+    background-color: @background;
+    border: 1px solid #202020;
+}
+
+.menu-container {
+    padding: 20px;
+    min-width: 500px;
+}
