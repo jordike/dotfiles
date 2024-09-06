@@ -44,4 +44,30 @@
 
 .no-notifications-label {
     margin-top: 10px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.notifications-toggles {
+    padding: 10px;
+}
+
+.dnd-switch {
+    background-color: #404040;
+    color: transparent;
+    border-radius: 20px;
+    min-width: 30px;
+    min-height: 20px;
+    transition: background-color 0.1s;
+    margin-right: 10px;
+}
+
+.dnd-switch.active {
+    background-color: @color1;
+}
+
+.dnd-switch slider {
+    background-color: @foreground;
+    border-radius: 50px;
+    min-width: 10px;
+    min-height: 10px;
 }

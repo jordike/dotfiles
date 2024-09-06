@@ -9,7 +9,7 @@ const fullTime = Variable("", {
 });
 
 const date = Variable("", {
-    poll: [1000, 'date "+%e %b %Y"']
+    poll: [1000, 'date "+%e %b"']
 });
 
 export default function Clock() {

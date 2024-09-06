@@ -13,7 +13,7 @@ App.config({
         NotificationOverview(),
         Menu(),
         Calendar(),
-        WeatherOverview()
+        // WeatherOverview()
 	]
 });
 

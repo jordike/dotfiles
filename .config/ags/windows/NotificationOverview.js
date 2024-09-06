@@ -39,21 +39,46 @@ export default function NotificationOverview() {
                     ]
                 }),
                 Widget.Separator(),
-                Widget.Label({
-                    className: "no-notifications-label",
-                    visible: notifications.as(notifications => notifications.length === 0),
-                    label: "There are no notifications."
-                }),
                 Widget.Scrollable({
                     className: "notifications-container",
                     hscroll: "never",
                     vscroll: "automatic",
-                    css:"min-height: 600px; min-width: 300px",
+                    css:"min-height: 600px; min-width: 365px",
                     child: Widget.Box({
                         vertical: true,
-                        className: "notifications-list",
-                        children: notifications.as(notifications => notifications.map(Notification)),
+                        children: [
+                            Widget.Label({
+                                className: "no-notifications-label",
+                                visible: notifications.as(notifications => notifications.length === 0),
+                                label: "There are no notifications"
+                            }),
+                            Widget.Box({
+                                vertical: true,
+                                className: "notifications-list",
+                                children: notifications.as(notifications => [
+                                    ...notifications.map(Notification)
+                                ]),
+                            })
+                        ]
                     })
+                }),
+                Widget.Separator(),
+                Widget.Box({
+                    className: "notifications-toggles",
+                    children: [
+                        Widget.Switch({
+                            className: "dnd-switch"
+                        })
+                            .on("notify::active", self => notificationsService.dnd = self.active)
+                            .hook(notificationsService, self => {
+                                self.active = notificationsService.dnd;
+                                self.toggleClassName("active", self.active);
+                            }),
+                        Widget.Label({
+                            className: "dnd-label",
+                            label: "Do not disturb"
+                        })
+                    ]
                 })
             ]
         })
