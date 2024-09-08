@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/jordi/.config/wallpapers/bad-goisern.jpg",
+    "wallpaper": "/home/jordi/.config/wallpapers/wallpaper_16.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#111010",
-        "foreground": "#d1cecf",
-        "cursor": "#d1cecf"
+        "background": "#0c0909",
+        "foreground": "#d1d6db",
+        "cursor": "#d1d6db"
     },
     "colors": {
-        "color0": "#111010",
-        "color1": "#36688F",
-        "color2": "#4D779D",
-        "color3": "#3D82AC",
-        "color4": "#5986AE",
-        "color5": "#6A91B6",
-        "color6": "#739EC5",
-        "color7": "#d1cecf",
-        "color8": "#929090",
-        "color9": "#36688F",
-        "color10": "#4D779D",
-        "color11": "#3D82AC",
-        "color12": "#5986AE",
-        "color13": "#6A91B6",
-        "color14": "#739EC5",
-        "color15": "#d1cecf"
+        "color0": "#0c0909",
+        "color1": "#5B6471",
+        "color2": "#8A6E57",
+        "color3": "#5C6C82",
+        "color4": "#6E7886",
+        "color5": "#7A8592",
+        "color6": "#949DA8",
+        "color7": "#d1d6db",
+        "color8": "#929599",
+        "color9": "#5B6471",
+        "color10": "#8A6E57",
+        "color11": "#5C6C82",
+        "color12": "#6E7886",
+        "color13": "#7A8592",
+        "color14": "#949DA8",
+        "color15": "#d1d6db"
     }
 }
