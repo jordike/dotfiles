@@ -1,11 +1,11 @@
-@import "../components/notification.css";
+@import "../components/notification";
 
 .notifications-container .notification {
-    background-color: @moduleBackground;
+    background-color: $moduleBackground;
 }
 
 .notifications-toggle {
-    background-color: @moduleBackground;
+    background-color: $moduleBackground;
     padding: 0 10px;
     border-radius: 20px;
 }
@@ -62,11 +62,11 @@
 }
 
 .dnd-switch.active {
-    background-color: @color1;
+    background-color: $color1;
 }
 
 .dnd-switch slider {
-    background-color: @foreground;
+    background-color: $foreground;
     border-radius: 50px;
     min-width: 10px;
     min-height: 10px;

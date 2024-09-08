@@ -1,5 +1,5 @@
 .workspaces {
-    background-color: @moduleBackground;
+    background-color: $moduleBackground;
     border-radius: 50px;
 }
 
@@ -21,9 +21,9 @@
 }
 
 .workspace.active {
-    background-color: @color1;
+    background-color: $color1;
 }
 
 .workspace:hover {
-    background-color: @color3;
+    background-color: $color3;
 }

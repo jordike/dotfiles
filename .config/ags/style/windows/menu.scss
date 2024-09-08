@@ -1,6 +1,6 @@
 #menu {
     border-radius: 20px;
-    background-color: @background;
+    background-color: $background;
     border: 1px solid #202020;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .menu-slider-slider slider {
-    background-color: @color1;
+    background-color: $color1;
     min-width: 10px;
     min-height: 10px;
     border-radius: 50px;
@@ -20,16 +20,16 @@
 }
 
 .menu-slider-slider contents trough {
-    background-color: @moduleBackground;
+    background-color: $moduleBackground;
     min-height: 10px;
 }
 
 .menu-slider-slider contents fill {
-    background-color: @color1;
+    background-color: $color1;
 }
 
 .menu-actions {
-    background-color: @moduleBackground;
+    background-color: $moduleBackground;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding: 10px;

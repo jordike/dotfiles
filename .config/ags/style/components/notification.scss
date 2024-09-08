@@ -4,7 +4,7 @@
     margin-bottom: 10px;
     min-width: 350px;
     border: 1px solid #202020;
-    background-color: @background;
+    background-color: $background;
 }
 
 .notification-content {
@@ -13,7 +13,7 @@
 
 .notification-title {
     font-weight: bold;
-    color: @foreground;
+    color: $foreground;
 }
 
 .notification-time {
@@ -48,7 +48,7 @@
 }
 
 .notification-action {
-    background-color: @moduleBackground;
+    background-color: $moduleBackground;
     padding: 5px 10px;
     border-radius: 10px;
     margin-right: 5px;

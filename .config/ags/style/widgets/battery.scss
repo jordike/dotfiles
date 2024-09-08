@@ -1,9 +1,9 @@
-.next-event {
-    background-color: @moduleBackground;
+.battery {
+    background-color: $moduleBackground;
     padding: 0 10px;
     border-radius: 20px;
 }
 
-.next-event-icon {
+.battery-level {
     margin-right: 5px;
 }
