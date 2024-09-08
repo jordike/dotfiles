@@ -1,4 +1,4 @@
-import Separator from "../../components/Separator.js";
+import Separator from "../components/Separator.js";
 
 const bluetooth = await Service.import("bluetooth");
 const network = await Service.import("network");

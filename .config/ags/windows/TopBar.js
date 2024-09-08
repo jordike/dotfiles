@@ -1,6 +1,6 @@
 import Battery from "../widgets/Battery.js";
 import Clock from "../widgets/Clock.js";
-import MenuToggle from "../widgets/menu/MenuToggle.js";
+import MenuToggle from "../widgets/MenuToggle.js";
 import Notifications from "../widgets/Notifications.js";
 import PowerMenu from "../widgets/PowerMenu.js";
 import Separator from "../components/Separator.js";
@@ -18,7 +18,9 @@ function BarLeft() {
         spacing: 8,
         children: [
             Workspaces(),
-            WindowTitle()
+            Separator(),
+            NextEvent(),
+            // WindowTitle()
         ]
     });
 }
@@ -37,13 +39,13 @@ function BarRight() {
         spacing: 8,
         hpack: "end",
         children: [
-            NextEvent(),
-            Separator(),
             Weather(),
             Separator(),
             Volume(),
             Separator(),
             Updates(),
+            Separator(),
+            Notifications(),
             Separator(),
             Widget.Box({
                 visible: battery.bind("available"),
@@ -52,8 +54,6 @@ function BarRight() {
                     Separator(),
                 ]
             }),
-            Notifications(),
-            Separator(),
             MenuToggle(),
             Separator(),
             PowerMenu()

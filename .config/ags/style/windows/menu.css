@@ -5,6 +5,49 @@
 }
 
 .menu-container {
-    padding: 20px;
     min-width: 500px;
+}
+
+.menu-slider-slider slider {
+    background-color: @color1;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50px;
+}
+
+.menu-slider-slider mark indicator {
+    background-color: red;
+}
+
+.menu-slider-slider contents trough {
+    background-color: @moduleBackground;
+    min-height: 10px;
+}
+
+.menu-slider-slider contents fill {
+    background-color: @color1;
+}
+
+.menu-actions {
+    background-color: @moduleBackground;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+}
+
+.menu-actions button {
+    margin-bottom: 10px;
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+.menu-content {
+    padding: 20px;
+}
+
+.menu-sliders {
+    padding: 20px;
+}
+
+.menu-sliders box {
+    margin-bottom: 10px;
 }

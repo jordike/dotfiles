@@ -3,7 +3,7 @@ const battery = await Service.import("battery");
 function BatteryIcon() {
     return Widget.Label({
         className: "icon battery-icon",
-        label: "🔋"
+        label: "🔋 "
     });
 }
 

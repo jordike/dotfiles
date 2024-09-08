@@ -1,8 +1,6 @@
 import IdleInhibitor from "../widgets/menu/IdleInhibitor.js";
 import QuickLock from "../widgets/menu/QuickLock.js";
 import Settings from "../widgets/menu/Settings.js";
-import ProfilePicture from "../widgets/ProfilePicture.js";
-import Separator from "../components/Separator.js"
 import Bluetooth from "../widgets/menu/Bluetooth.js";
 import Network from "../widgets/menu/Network.js";
 import PowerProfiles from "../widgets/menu/PowerProfiles.js";
@@ -22,14 +20,12 @@ export default function Menu() {
         margins: [ 6 ],
         child: Widget.Box({
             className: "menu-container",
-            vertical: true,
-            hexpand: true,
             children: [
                 Widget.Box({
-                    hexpand: true,
+                    vexpand: true,
+                    vertical: true,
+                    className: "menu-actions",
                     children: [
-                        // ProfilePicture(),
-                        // Separator(),
                         QuickLock(),
                         ToggleLayoutMode(),
                         Settings(),
@@ -37,35 +33,51 @@ export default function Menu() {
                     ]
                 }),
                 Widget.Box({
+                    className: "menu-content",
                     vertical: true,
+                    vexpand: true,
                     hexpand: true,
                     children: [
-                        VolumeSlider(),
-                        Brightness()
-                    ]
-                }),
-                Widget.Separator(),
-                Widget.Box({
-                    hexpand: true,
-                    children: [
-                        Bluetooth(),
-                        Network(),
-                    ]
-                }),
-                Widget.Box({
-                    hexpand: true,
-                    children: [
-                        PowerProfiles()
-                    ]
-                }),
-                Widget.Separator(),
-                Widget.Box({
-                    hexpand: true,
-                    vertical: true,
-                    children: [
-                        Cpu(),
-                        Memory(),
-                        SystemTemperature()
+                        Widget.Box({
+                            className: "menu-sliders",
+                            vertical: true,
+                            hexpand: true,
+                            children: [
+                                VolumeSlider(),
+                                Brightness()
+                            ]
+                        }),
+                        Widget.Separator(),
+                        Widget.Box({
+                            className: "menu-toggles",
+                            vertical: true,
+                            children: [
+                                Widget.Box({
+                                    hexpand: true,
+                                    children: [
+                                        Network(),
+                                        Bluetooth(),
+                                    ]
+                                }),
+                                Widget.Box({
+                                    hexpand: true,
+                                    children: [
+                                        PowerProfiles()
+                                    ]
+                                }),
+                            ]
+                        }),
+                        Widget.Separator(),
+                        Widget.Box({
+                            className: "menu-stats",
+                            hexpand: true,
+                            vertical: true,
+                            children: [
+                                Cpu(),
+                                Memory(),
+                                SystemTemperature()
+                            ]
+                        })
                     ]
                 })
             ]

@@ -3,6 +3,8 @@ const aurUpdateCounter = Variable(0);
 const totalCounter = Variable(0);
 const tooltip = Variable("");
 
+const refreshInterval = 10 * 60 * 1000;
+
 function updateTotalCounter() {
     totalCounter.value = pacmanUpdateCounter.value + aurUpdateCounter.value;
     tooltip.value = `Pacman updates:\t${pacmanUpdateCounter.value.toString()}\nAUR updates:\t${aurUpdateCounter.value.toString()}`;
@@ -25,7 +27,7 @@ function updateCounters() {
 }
 
 export default function Updates() {
-    Utils.interval(5000, updateCounters);
+    Utils.interval(refreshInterval, updateCounters);
 
     updateCounters();
 
