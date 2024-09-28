@@ -1,0 +1,36 @@
+#update-overview {
+    background-color: $background;
+    color: $foreground;
+    border-radius: 20px;
+    border: 1px solid #202020;
+}
+
+.update-overview-container {
+    padding: 10px;
+}
+
+.update-overview-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.update-overview-refresh-icon {
+    font-size: 20px;
+}
+
+.update-overview-header {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.update-overview-list-item {
+    background-color: $moduleBackground;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.update-overview-list-scrollable {
+    min-height: 400px;
+    min-width: 300px;
+}

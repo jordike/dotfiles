@@ -1,11 +1,11 @@
 export default function QuickLock() {
     return Widget.Button({
-        className: "quick-lock",
+        className: "menu-action",
         tooltipText: "Quick lock",
         onClicked: () => Utils.execAsync("hyprlock"),
-        child: Widget.Label({
-            className: "icon quick-lock-icon",
-            label: "🔒"
+        child: Widget.Icon({
+            className: "menu-action-icon",
+            icon: "system-lock-screen-symbolic"
         })
     });
 }

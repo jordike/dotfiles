@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-0plv23.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0101",
+        "foreground": "#c7bdbd",
+        "cursor": "#c7bdbd"
+    },
+    "colors": {
+        "color0": "#0d0101",
+        "color1": "#AA1211",
+        "color2": "#AF2A28",
+        "color3": "#C13633",
+        "color4": "#986B6A",
+        "color5": "#D05E5D",
+        "color6": "#C8807F",
+        "color7": "#c7bdbd",
+        "color8": "#8b8484",
+        "color9": "#AA1211",
+        "color10": "#AF2A28",
+        "color11": "#C13633",
+        "color12": "#986B6A",
+        "color13": "#D05E5D",
+        "color14": "#C8807F",
+        "color15": "#c7bdbd"
+    }
+}

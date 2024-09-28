@@ -1,0 +1,40 @@
+#volume-change {
+    background-color: $background;
+    border-radius: 20px;
+    border: 1px solid #202020;
+}
+
+.volume-change-container {
+    padding: 10px 5px;
+}
+
+.volume-change-label {
+    min-width: 35px;
+    margin-bottom: 10px;
+}
+
+.volume-change-container-slider slider {
+    background-color: $foreground;
+    min-width: 15px;
+    min-height: 15px;
+    border-radius: 50px;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: darken($foreground, 20%);
+    }
+}
+
+.volume-change-container-slider contents trough {
+    background-color: $moduleBackground;
+    min-height: 100px;
+    min-width: 15px;
+    border-radius: 50px;
+
+    highlight,
+    progress {
+        background-color: $color1;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}

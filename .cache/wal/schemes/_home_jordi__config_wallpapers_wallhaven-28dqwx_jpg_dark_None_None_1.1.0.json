@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-28dqwx.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#020D12",
+        "foreground": "#8fd6e3",
+        "cursor": "#8fd6e3"
+    },
+    "colors": {
+        "color0": "#020D12",
+        "color1": "#0B546D",
+        "color2": "#0E627C",
+        "color3": "#246375",
+        "color4": "#116E8C",
+        "color5": "#17789C",
+        "color6": "#1E8DAC",
+        "color7": "#8fd6e3",
+        "color8": "#64959e",
+        "color9": "#0B546D",
+        "color10": "#0E627C",
+        "color11": "#246375",
+        "color12": "#116E8C",
+        "color13": "#17789C",
+        "color14": "#1E8DAC",
+        "color15": "#8fd6e3"
+    }
+}

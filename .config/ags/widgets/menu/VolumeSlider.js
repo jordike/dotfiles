@@ -11,22 +11,25 @@ export default function VolumeSlider() {
         max: 100,
         hexpand: true,
         drawValue: false,
-        marks: [
-            [ 0, "0%" ],
-            [ 25, "25%" ],
-            [ 50, "50%" ],
-            [ 75, "75%" ],
-            [ 100, "100%" ]
-        ]
     });
     slider.set_show_fill_level(true);
 
     return Widget.Box({
         className: "menu-slider",
+        hexpand: true,
+        vertical: true,
         children: [
-            Widget.Label({
-                className: "menu-slider-label",
-                label: volume.as(_volume => Math.round(_volume * 100).toString() + "%")
+            Widget.CenterBox({
+                startWidget: Widget.Label({
+                    className: "menu-slider-label",
+                    xalign: 0,
+                    label: "Volume"
+                }),
+                endWidget: Widget.Label({
+                    xalign: 1,
+                    className: "menu-slider-value",
+                    label: volume.as(_volume => Math.round(_volume * 100) + "%")
+                })
             }),
             slider
         ]

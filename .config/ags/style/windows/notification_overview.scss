@@ -20,10 +20,12 @@
 }
 
 #notifications-overview {
+    background-color: $background;
     border-radius: 20px;
     padding: 20px;
     min-width: 300px;
     border: 1px solid #202020;
+    color: $foreground;
 }
 
 .notifications-header {

@@ -108,7 +108,11 @@ export default function Calendar() {
                                 })
                             })
                         }),
-                        calendar
+                        calendar,
+                        Widget.Box({
+                            className: "calendar-next-event",
+                            vexpand: true,
+                        })
                     ]
                 })
             ]

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-lmd95y.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#091219",
+        "foreground": "#96c1d0",
+        "cursor": "#96c1d0"
+    },
+    "colors": {
+        "color0": "#091219",
+        "color1": "#29516A",
+        "color2": "#55595D",
+        "color3": "#BC4140",
+        "color4": "#BE936D",
+        "color5": "#2A6E91",
+        "color6": "#3F58AC",
+        "color7": "#96c1d0",
+        "color8": "#698791",
+        "color9": "#29516A",
+        "color10": "#55595D",
+        "color11": "#BC4140",
+        "color12": "#BE936D",
+        "color13": "#2A6E91",
+        "color14": "#3F58AC",
+        "color15": "#96c1d0"
+    }
+}

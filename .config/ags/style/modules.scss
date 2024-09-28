@@ -8,13 +8,13 @@
 @import "widgets/clock";
 @import "widgets/currently_playing";
 @import "widgets/menu";
-@import "widgets/power";
 @import "widgets/update_counter";
 @import "widgets/volume";
 @import "widgets/weather";
 @import "widgets/workspaces";
 @import "widgets/notifications_toggle";
 @import "widgets/next_event";
+@import "widgets/system_tray";
 
 @import "widgets/menu/menu";
 
@@ -23,3 +23,5 @@
 @import "windows/menu";
 @import "windows/notification_popups";
 @import "windows/weather_overview";
+@import "windows/volume_change.scss";
+@import "windows/update_overview.scss";

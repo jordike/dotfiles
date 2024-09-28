@@ -11,22 +11,25 @@ export default function Brightness() {
         max: 100,
         hexpand: true,
         drawValue: false,
-        marks: [
-            [ 0, "0%" ],
-            [ 25, "25%" ],
-            [ 50, "50%" ],
-            [ 75, "75%" ],
-            [ 100, "100%" ]
-        ],
     });
     slider.set_show_fill_level(true);
 
     return Widget.Box({
         className: "menu-slider",
+        hexpand: true,
+        vertical: true,
         children: [
-            Widget.Label({
-                className: "menu-slider-label",
-                label: brightness.as(brightness => `${Math.round(brightness * 100)}%`)
+            Widget.CenterBox({
+                startWidget: Widget.Label({
+                    className: "menu-slider-label",
+                    xalign: 0,
+                    label: "Brightness"
+                }),
+                endWidget: Widget.Label({
+                    xalign: 1,
+                    className: "menu-slider-value",
+                    label: brightness.as(_brightness => Math.round(_brightness * 100) + "%")
+                })
             }),
             slider
         ]

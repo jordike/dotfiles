@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-oxx8m9.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0809",
+        "foreground": "#de7f91",
+        "cursor": "#de7f91"
+    },
+    "colors": {
+        "color0": "#0a0809",
+        "color1": "#701323",
+        "color2": "#442D32",
+        "color3": "#4C3E41",
+        "color4": "#4C4849",
+        "color5": "#9E0E21",
+        "color6": "#E30416",
+        "color7": "#de7f91",
+        "color8": "#9b5865",
+        "color9": "#701323",
+        "color10": "#442D32",
+        "color11": "#4C3E41",
+        "color12": "#4C4849",
+        "color13": "#9E0E21",
+        "color14": "#E30416",
+        "color15": "#de7f91"
+    }
+}

@@ -1,0 +1,42 @@
+.access-point {
+    &-icon {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    &-password-field {
+        padding: 5px 10px;
+        border: 1px solid #606060;
+        border-radius: 20px;
+        margin-right: 5px;
+
+        progress {
+            color: red;
+        }
+    }
+
+    .toggle-password-visibility-icon {
+        font-size: 30px;
+    }
+
+    &-connect {
+        padding-top: 5px;
+
+        &-panel {
+            margin-top: 10px;
+        }
+
+        &-button {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            background-color: #505050;
+            padding: 5px 10px;
+            border-radius: 20px;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: #454545;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.menu-stats {
+    padding: 10px;
+}
+
+.system-statistic {
+    background-color: $moduleBackground;
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &-icon {
+        margin-right: 10px;
+    }
+
+    &-label {
+        color: $foreground;
+    }
+
+    &-label-separator {
+        margin: 0 10px;
+        color: lighten($background, 30%);
+    }
+}

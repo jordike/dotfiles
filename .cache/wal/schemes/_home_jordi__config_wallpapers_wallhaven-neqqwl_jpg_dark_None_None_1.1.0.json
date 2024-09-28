@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-neqqwl.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0004",
+        "foreground": "#f5f1c4",
+        "cursor": "#f5f1c4"
+    },
+    "colors": {
+        "color0": "#0a0004",
+        "color1": "#ED6351",
+        "color2": "#FC9B2F",
+        "color3": "#FCC831",
+        "color4": "#FB9D57",
+        "color5": "#FBDB69",
+        "color6": "#FAB683",
+        "color7": "#f5f1c4",
+        "color8": "#aba889",
+        "color9": "#ED6351",
+        "color10": "#FC9B2F",
+        "color11": "#FCC831",
+        "color12": "#FB9D57",
+        "color13": "#FBDB69",
+        "color14": "#FAB683",
+        "color15": "#f5f1c4"
+    }
+}

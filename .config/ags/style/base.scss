@@ -4,9 +4,10 @@
     font-family: "JetBrainsMonoNL Nerd Font";
 }
 
-window {
+#top_bar {
     color: $foreground;
     background-color: $background;
+    border-bottom: 1px solid #202020;
 }
 
 .bar > * {
@@ -36,4 +37,31 @@ separator.vertical {
 
 separator.horizontal {
     margin: 0 10px;
+}
+
+selection {
+    background-color: $color1;
+}
+
+menu {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: $background;
+    border: 1px solid #202020;
+
+    menuitem {
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 20px;
+        transition: 0.2s;
+
+        &:disabled {
+            color: darken($foreground, 40%);
+        }
+
+        &:hover {
+            background-color: $moduleBackground;
+        }
+
+    }
 }

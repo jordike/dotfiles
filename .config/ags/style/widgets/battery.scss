@@ -2,8 +2,8 @@
     background-color: $moduleBackground;
     padding: 0 10px;
     border-radius: 20px;
-}
 
-.battery-level {
-    margin-right: 5px;
+    &-icon {
+        margin-right: 5px;
+    }
 }

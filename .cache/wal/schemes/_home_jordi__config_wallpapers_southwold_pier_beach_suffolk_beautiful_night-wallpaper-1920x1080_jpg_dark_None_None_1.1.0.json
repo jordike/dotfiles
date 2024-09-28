@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/southwold_pier_beach_suffolk_beautiful_night-wallpaper-1920x1080.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0F0C13",
+        "foreground": "#acbfe1",
+        "cursor": "#acbfe1"
+    },
+    "colors": {
+        "color0": "#0F0C13",
+        "color1": "#304573",
+        "color2": "#565067",
+        "color3": "#A78672",
+        "color4": "#2C518C",
+        "color5": "#556598",
+        "color6": "#527BC4",
+        "color7": "#acbfe1",
+        "color8": "#78859d",
+        "color9": "#304573",
+        "color10": "#565067",
+        "color11": "#A78672",
+        "color12": "#2C518C",
+        "color13": "#556598",
+        "color14": "#527BC4",
+        "color15": "#acbfe1"
+    }
+}

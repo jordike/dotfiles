@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-j359qq.png",
+    "alpha": "100",
+    "special": {
+        "background": "#09151E",
+        "foreground": "#91deeb",
+        "cursor": "#91deeb"
+    },
+    "colors": {
+        "color0": "#09151E",
+        "color1": "#176499",
+        "color2": "#1A72AC",
+        "color3": "#2471A0",
+        "color4": "#1B7CC3",
+        "color5": "#24A0D3",
+        "color6": "#37B1D2",
+        "color7": "#91deeb",
+        "color8": "#659ba4",
+        "color9": "#176499",
+        "color10": "#1A72AC",
+        "color11": "#2471A0",
+        "color12": "#1B7CC3",
+        "color13": "#24A0D3",
+        "color14": "#37B1D2",
+        "color15": "#91deeb"
+    }
+}

@@ -11,9 +11,9 @@ export default function Notifications() {
         child: Widget.Box({
             className: "notifications-toggle",
             children: [
-                Widget.Label({
+                Widget.Icon({
                     className: "icon notifications-icon",
-                    label: "📰 "
+                    icon: notificationsService.bind("dnd").as(dnd => dnd ? "notifications-disabled-symbolic" : "preferences-system-notifications-symbolic")
                 }),
                 Widget.Label({
                     className: "notifications-counter",

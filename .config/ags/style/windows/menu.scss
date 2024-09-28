@@ -1,6 +1,7 @@
 #menu {
     border-radius: 20px;
     background-color: $background;
+    color: $foreground;
     border: 1px solid #202020;
 }
 
@@ -9,23 +10,40 @@
 }
 
 .menu-slider-slider slider {
-    background-color: $color1;
-    min-width: 10px;
-    min-height: 10px;
+    background-color: $foreground;
+    min-width: 15px;
+    min-height: 15px;
     border-radius: 50px;
-}
+    transition: 0.2s;
 
-.menu-slider-slider mark indicator {
-    background-color: red;
+    &:hover {
+        background-color: darken($foreground, 10%);
+    }
 }
 
 .menu-slider-slider contents trough {
     background-color: $moduleBackground;
     min-height: 10px;
+    border-radius: 50px;
+
+    highlight,
+    progress {
+        background-color: $color1;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+    }
 }
 
-.menu-slider-slider contents fill {
-    background-color: $color1;
+.menu-slider-label,
+.menu-slider-value {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.menu-slider {
+    background-color: rgba(140, 140, 140, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 .menu-actions {
@@ -35,19 +53,118 @@
     padding: 10px;
 }
 
-.menu-actions button {
+.menu-action {
+    background-color: $moduleBackground;
+    border-radius: 50px;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 10px;
     margin-bottom: 10px;
-    background-color: rgba(50, 50, 50, 0.6);
+
+    &-icon {
+        color: $color1;
+        font-size: 22px;
+    }
 }
 
 .menu-content {
-    padding: 20px;
+    padding: 10px;
 }
 
 .menu-sliders {
-    padding: 20px;
+    padding: 10px;
 }
 
-.menu-sliders box {
+.menu-slider:not(:last-child) {
     margin-bottom: 10px;
+}
+
+.menu-slider-label {
+    min-width: 50px;
+}
+
+.menu-button {
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: $color1;
+    color: $foreground;
+}
+
+.menu-sliders,
+.menu-toggles-section,
+.menu-stats {
+    background-color: rgba(60, 60, 60, 0.1);
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.menu-stats {
+    margin-bottom: 0;
+}
+
+.menu-toggles-section {
+    padding: 5px 0;
+
+    &:first-child {
+        margin-right: 10px;
+    }
+}
+
+.menu-option-toggle {
+    background-color: rgba(140, 140, 140, 0.1);
+    color: $foreground;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    margin: 5px 10px;
+
+    &-button-icon {
+        font-size: 18px;
+        margin-right: 10px;
+        color: $foreground;
+    }
+
+    &-button-label {
+        font-size: 16px;
+        margin-right: 10px;
+        color: $foreground;
+    }
+
+    &.active {
+        background-color: $color1;
+    }
+
+    &-expand {
+        font-size: 18px;
+        color: $foreground;
+    }
+
+    &-list {
+        background-color: rgba(60, 60, 60, 0.2);
+        border-radius: 20px;
+        padding: 5px 10px;
+        padding-top: 10px;
+        margin: 5px 10px;
+
+        &-item {
+            background-color: rgba(140, 140, 140, 0.1);
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: rgba(140, 140, 140, 0.6);
+            }
+        }
+    }
+}
+
+.menu-list {
+    min-height: 200px;
+}
+
+.empty-list-label {
+    color: #606060;
 }

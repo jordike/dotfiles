@@ -31,21 +31,24 @@ export default function Updates() {
 
     updateCounters();
 
-    return Widget.Box({
-        className: "update-counters",
-        tooltipText: tooltip.bind(),
-        children: [
-            Widget.Box({
-                children: [
-                    Widget.Label({
-                        className: "icon updates-icon",
-                        label: "🚚 "
-                    }),
-                    Widget.Label({
-                        label: totalCounter.bind().as(counter => counter.toString())
-                    })
-                ]
-            })
-        ]
+    return Widget.Button({
+        onClicked: () => App.toggleWindow("update-overview"),
+        child: Widget.Box({
+            className: "update-counters",
+            tooltipText: tooltip.bind(),
+            children: [
+                Widget.Box({
+                    children: [
+                        Widget.Icon({
+                            className: "icon updates-icon",
+                            icon: "software-update-available-symbolic"
+                        }),
+                        Widget.Label({
+                            label: totalCounter.bind().as(counter => counter.toString())
+                        })
+                    ]
+                })
+            ]
+        })
     });
 }

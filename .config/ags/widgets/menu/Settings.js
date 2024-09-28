@@ -1,10 +1,10 @@
 export default function Settings() {
     return Widget.Button({
-        className: "icon settings-button",
+        className: "menu-action",
         tooltipText: "Settings",
-        child: Widget.Label({
-            className: "icon settings-button-icon",
-            label: "⚙"
+        child: Widget.Icon({
+            className: "menu-action-icon",
+            icon: "emblem-system-symbolic"
         })
     });
 }

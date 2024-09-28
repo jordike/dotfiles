@@ -19,12 +19,12 @@ function toggleLayout() {
 
 export default function ToggleLayoutMode() {
     return Widget.Button({
-        className: "toggle-layout",
+        className: "menu-action active",
         tooltipText: "Toggle layout mode",
         onClicked: toggleLayout,
-        child: Widget.Label({
-            className: "icon toggle-layout-icon",
-            label: "🗺",
+        child: Widget.Icon({
+            className: "menu-action-icon",
+            icon: "view-grid-symbolic",
         })
     });
 }

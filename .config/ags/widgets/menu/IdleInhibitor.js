@@ -1,9 +1,9 @@
 export default function IdleInhibitor() {
     return Widget.Button({
-        className: "idle-inhibitor-button",
+        className: "menu-action",
         tooltipText: "Idle inhibitor",
         child: Widget.Label({
-            className: "icon idle-inhibitor-icon",
+            className: "menu-action-icon",
             label: "👁"
         })
     });

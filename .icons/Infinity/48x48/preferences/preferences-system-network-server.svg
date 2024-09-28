@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="preferences-system-network-server.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.671875"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:window-width="1366"
+     inkscape:window-height="696"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <rect
+     x="16"
+     y="11"
+     width="32"
+     height="42"
+     rx="3"
+     ry="3"
+     fill="#666666"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="8.6816"
+     style="paint-order:stroke fill markers"
+     id="rect1" />
+  <path
+     d="m8 5c-2.216 0-4 1.784-4 4v8c0 2.216 1.784 4 4 4h48c2.216 0 4-1.784 4-4v-8c0-2.216-1.784-4-4-4h-48zm0 19c-2.216 0-4 1.784-4 4v8c0 2.216 1.784 4 4 4h48c2.216 0 4-1.784 4-4v-8c0-2.216-1.784-4-4-4h-48zm0 19c-2.216 0-4 1.784-4 4v8c0 2.216 1.784 4 4 4h48c2.216 0 4-1.784 4-4v-8c0-2.216-1.784-4-4-4h-48z"
+     fill="#f9f9f9"
+     stroke-width=".94281"
+     id="path1"
+     style="fill:#bfbfbf;fill-opacity:0.80000001" />
+  <image
+     x="12"
+     y="7"
+     width="40"
+     height="50"
+     image-rendering="optimizeQuality"
+     preserveAspectRatio="none"
+     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAyCAYAAAAus5mQAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAzRJREFUWIXtmW1q40gQhuutVqvX Y0MmAwvG6AY6j3OFXEPnic/TNzDGZGHsgD+21aqq/WE7eLJfP2wx2UUPCNRQdD2opEZUgf4aXG7M 7G9C7gOA6+WfkuHjumkaxBhR1zVWqxU2m83HmLvy+Phos9nMYoxW17U1TWPXotfJMZ/PmYhcVVXu 7e2tGI/HSCmhbdteJMuytBCC7fd7e3h46JbLpRCRLBYLvUheEmM+n/N0Oi2IKOx2uxBCKHPOBQD2 3vcimHM2M1PvfZdSaieTSSKitF6vu4skiIiapuEYYzGdTn9JKY0BTERk5L33ZuZUtRdBZjYAknPO zrmjme1CCPv1ev17Xddd0zRaEBFijKiqym2321CW5YSIHgCMVbUkImdmvQjaCQHQElEJgHa7XVdV VY4xChGhICKq6xqvr68uhFB2XTcCMAYwMTMPgIkIzrm7yonIxVEBlKpKZtaGEA4pJVfXNRaLBRVm Rs/PzwghMIACgFfV0sy8mZU4nQM4b3hvzMwMADFzycyemQtm5tVqBTOj4hKZUoKqclEUjk5ldcwM AGDmXkp8FiNVdQCcmbmUEl/nYyKizWaDtm3hvYeqQlXhnCNVRV/vHxGRmf2QS1XhvUfbtu/nL/eV /F4Mgrfy6QUH/vfAzPD09OTH4/GX0Wj0TUR+NbNvzrkvIuL7OqQvqKo557KIHAB8d879djwev+/3 +8PLy0v+9B/JIHgrg+CtDIK3MgjeyiB4K4PgrQyCAwP/wvDLfyuD4K18esGC6DSrICLLOVtRFKfG scilyU199QgBGDNf57Kcs5VlaWVZ2rsgEVEIwfSEnBvboqru3AHtw4+Y2VTVAAgRCQAJISgzW0rp FAOAZrOZiYiKSJdzzqraElE+d98zEWXn3F2vy74AWgCtqrY55ywinYjobDYzAKcnGGO0qqpku922 o9HoICKlqhIzl0TkqMcm+rlSLTPvnXOH4/HYfv36VWKM7yW2uq4txijT6TSllPZFUZCItMzszczh w8TvXgAwACIi2Tl36LpuP5lM0nK5lLqubbFY2H9jFHYtST9hmCgiGkKQfxomvkt+5nHsD6KXm589 0P4DSn5htbxp0UkAAAAASUVORK5CYII= "
+     id="image1" />
+  <circle
+     cx="47.5"
+     cy="12.5"
+     r="2.5"
+     fill="#ffffff"
+     id="circle1" />
+  <g
+     transform="translate(4)"
+     fill="#ffffff"
+     shape-rendering="auto"
+     id="g3">
+    <path
+       d="m25 10-4 6m-2-6-4 6m-2-6-4 6m22-6-4 6"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       image-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"
+       id="path2" />
+    <path
+       d="m13 9a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       image-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"
+       id="path3" />
+  </g>
+  <circle
+     cx="47.5"
+     cy="31.5"
+     r="2.5"
+     fill="#ffffff"
+     id="circle3" />
+  <g
+     transform="translate(4,19)"
+     fill="#ffffff"
+     shape-rendering="auto"
+     id="g5">
+    <path
+       d="m25 10-4 6m-2-6-4 6m-2-6-4 6m22-6-4 6"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       image-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"
+       id="path4" />
+    <path
+       d="m13 9a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       image-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"
+       id="path5" />
+  </g>
+  <circle
+     cx="47.5"
+     cy="50.5"
+     r="2.5"
+     fill="#ffffff"
+     id="circle5" />
+  <g
+     transform="translate(4,38)"
+     fill="#ffffff"
+     shape-rendering="auto"
+     id="g7">
+    <path
+       d="m25 10-4 6m-2-6-4 6m-2-6-4 6m22-6-4 6"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       image-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"
+       id="path6" />
+    <path
+       d="m13 9a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797zm6 0a1 1 0 0 0-0.83203 0.44531l-4 6a1 1 0 0 0 0.27734 1.3867 1 1 0 0 0 1.3867-0.27734l4-6a1 1 0 0 0-0.27734-1.3867 1 1 0 0 0-0.55469-0.16797z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       image-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"
+       id="path7" />
+  </g>
+</svg>

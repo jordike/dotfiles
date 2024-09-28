@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-z86ldv.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0D0101",
+        "foreground": "#ec9190",
+        "cursor": "#ec9190"
+    },
+    "colors": {
+        "color0": "#0D0101",
+        "color1": "#AB1B19",
+        "color2": "#BC201E",
+        "color3": "#B81F20",
+        "color4": "#BD2121",
+        "color5": "#C1221F",
+        "color6": "#CC2726",
+        "color7": "#ec9190",
+        "color8": "#a56564",
+        "color9": "#AB1B19",
+        "color10": "#BC201E",
+        "color11": "#B81F20",
+        "color12": "#BD2121",
+        "color13": "#C1221F",
+        "color14": "#CC2726",
+        "color15": "#ec9190"
+    }
+}

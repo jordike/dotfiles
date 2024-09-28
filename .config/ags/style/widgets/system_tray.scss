@@ -1,0 +1,10 @@
+.system-tray {
+    margin-left: 5px;
+    &-item {
+        margin-right: 10px;
+
+        &-icon {
+            font-size: 20px;
+        }
+    }
+}

@@ -13,6 +13,10 @@
 
 .notification-title {
     font-weight: bold;
+    color: lighten($color1, 10%);
+}
+
+.notification-body {
     color: $foreground;
 }
 

@@ -14,12 +14,14 @@ export default function MenuToggle() {
             children: [
                 Widget.Icon({
                     className: "icon menu-toggle-icon",
-                    icon: network.wired.bind('icon_name'),
+                }).hook(network.wifi, self => {
+                    self.icon = network.wifi.icon_name;
                 }),
                 Separator(),
                 Widget.Icon({
                     className: "menu-toggle-icon icon",
-                    icon: bluetooth.bind('enabled').as(on => `bluetooth-${on ? 'active' : 'disabled'}-symbolic`),
+                }).hook(bluetooth, self => {
+                    self.icon = `bluetooth-${bluetooth.enabled ? 'active' : 'disabled'}-symbolic`;
                 })
             ]
         })

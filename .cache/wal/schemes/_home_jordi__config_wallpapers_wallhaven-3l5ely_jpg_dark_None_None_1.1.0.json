@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-3l5ely.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#00152F",
+        "foreground": "#e0e2d3",
+        "cursor": "#e0e2d3"
+    },
+    "colors": {
+        "color0": "#00152F",
+        "color1": "#395983",
+        "color2": "#066A96",
+        "color3": "#1194B2",
+        "color4": "#1CB0C8",
+        "color5": "#44BAC2",
+        "color6": "#60CDDA",
+        "color7": "#e0e2d3",
+        "color8": "#9c9e93",
+        "color9": "#395983",
+        "color10": "#066A96",
+        "color11": "#1194B2",
+        "color12": "#1CB0C8",
+        "color13": "#44BAC2",
+        "color14": "#60CDDA",
+        "color15": "#e0e2d3"
+    }
+}

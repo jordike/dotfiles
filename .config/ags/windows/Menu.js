@@ -10,6 +10,8 @@ import Memory from "../widgets/menu/Memory.js";
 import SystemTemperature from "../widgets/menu/SystemTemperature.js";
 import ToggleLayoutMode from "../widgets/menu/ToggleLayoutMode.js";
 import Brightness from "../widgets/menu/Brightness.js";
+import Vpn from "../widgets/menu/Vpn.js";
+import PowerMenu from "../widgets/menu/PowerMenu.js";
 
 export default function Menu() {
     return Widget.Window({
@@ -18,6 +20,7 @@ export default function Menu() {
         layer: "top",
         visible: false,
         margins: [ 6 ],
+        keymode: "on-demand",
         child: Widget.Box({
             className: "menu-container",
             children: [
@@ -29,7 +32,8 @@ export default function Menu() {
                         QuickLock(),
                         ToggleLayoutMode(),
                         Settings(),
-                        IdleInhibitor()
+                        IdleInhibitor(),
+                        PowerMenu()
                     ]
                 }),
                 Widget.Box({
@@ -47,31 +51,30 @@ export default function Menu() {
                                 Brightness()
                             ]
                         }),
-                        Widget.Separator(),
                         Widget.Box({
                             className: "menu-toggles",
-                            vertical: true,
                             children: [
                                 Widget.Box({
-                                    hexpand: true,
+                                    className: "menu-toggles-section",
+                                    vertical: true,
                                     children: [
                                         Network(),
-                                        Bluetooth(),
+                                        Vpn()
                                     ]
                                 }),
                                 Widget.Box({
-                                    hexpand: true,
+                                    className: "menu-toggles-section",
+                                    vertical: true,
                                     children: [
+                                        Bluetooth(),
                                         PowerProfiles()
                                     ]
                                 }),
                             ]
                         }),
-                        Widget.Separator(),
                         Widget.Box({
                             className: "menu-stats",
                             hexpand: true,
-                            vertical: true,
                             children: [
                                 Cpu(),
                                 Memory(),

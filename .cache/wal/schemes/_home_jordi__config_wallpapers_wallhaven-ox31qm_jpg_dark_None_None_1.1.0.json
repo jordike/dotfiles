@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-ox31qm.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#140a18",
+        "foreground": "#c9ccdd",
+        "cursor": "#c9ccdd"
+    },
+    "colors": {
+        "color0": "#140a18",
+        "color1": "#E65A54",
+        "color2": "#ED8F6F",
+        "color3": "#2E6796",
+        "color4": "#616694",
+        "color5": "#937297",
+        "color6": "#648EB9",
+        "color7": "#c9ccdd",
+        "color8": "#8c8e9a",
+        "color9": "#E65A54",
+        "color10": "#ED8F6F",
+        "color11": "#2E6796",
+        "color12": "#616694",
+        "color13": "#937297",
+        "color14": "#648EB9",
+        "color15": "#c9ccdd"
+    }
+}

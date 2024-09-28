@@ -1,14 +1,25 @@
+import Separator from "../components/Separator.js";
+
 export default function NextEvent() {
     return Widget.Box({
         className: "next-event",
         children: [
-            Widget.Label({
+            Widget.Icon({
                 className: "icon next-event-icon",
-                label: "📅"
+                icon: "x-office-calendar-symbolic"
             }),
-            Widget.Label({
-                className: "next-event-label",
-                label: "NextEvent"
+            Widget.Box({
+                children: [
+                    Widget.Label({
+                        className: "next-event-label",
+                        label: "Test"
+                    }),
+                    Separator(),
+                    Widget.Label({
+                        className: "next-event-timer",
+                        label: "15:32:43"
+                    })
+                ]
             })
         ]
     });

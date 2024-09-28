@@ -8,14 +8,18 @@ export default function Weather() {
         child: Widget.Box({
             className: "weather",
             children: [
-                Widget.Icon({
-                    className: "icon weather-icon",
-                    icon: currentWeather.as(currentWeather => "/home/jordi/.config/ags/icons/weather/" + currentWeather?.iconName)
+                Widget.Box({
+                    children: [
+                        Widget.Icon({
+                            className: "icon weather-icon",
+                            icon: currentWeather.as(weather => currentWeather.available ? "/home/jordi/.config/ags/icons/weather/" + weather?.iconName : "dialog-warning-symbolic")
+                        }),
+                        Widget.Label({
+                            className: "weather-temperature",
+                            label: currentWeather.as(weather => currentWeather.available ? weather?.temperature.toString() + " °C" : "Unavailable")
+                        })
+                    ]
                 }),
-                Widget.Label({
-                    className: "weather-temperature",
-                    label: currentWeather.as(currentWeather => currentWeather?.temperature.toString() + " °C"?? "Unavailable")
-                })
             ]
         })
     });

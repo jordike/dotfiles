@@ -37,6 +37,7 @@ class WeatherService extends Service {
 
     #getUnavailableFormat() {
         return {
+            available: false,
             currentWeather: {
                 available: false
             },
@@ -69,9 +70,7 @@ class WeatherService extends Service {
             .catch(exception => {
                 console.error(exception);
 
-                return {
-                    statusCode: 500
-                }
+                return this.#getUnavailableFormat();
             });
 
         if (response.status !== 200) {

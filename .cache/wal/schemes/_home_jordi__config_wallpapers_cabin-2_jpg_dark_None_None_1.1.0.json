@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/cabin-2.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#111618",
+        "foreground": "#dac8bf",
+        "cursor": "#dac8bf"
+    },
+    "colors": {
+        "color0": "#111618",
+        "color1": "#AD877B",
+        "color2": "#9E7F80",
+        "color3": "#7C9682",
+        "color4": "#95A48D",
+        "color5": "#AFAE95",
+        "color6": "#B8BAA4",
+        "color7": "#dac8bf",
+        "color8": "#988c85",
+        "color9": "#AD877B",
+        "color10": "#9E7F80",
+        "color11": "#7C9682",
+        "color12": "#95A48D",
+        "color13": "#AFAE95",
+        "color14": "#B8BAA4",
+        "color15": "#dac8bf"
+    }
+}

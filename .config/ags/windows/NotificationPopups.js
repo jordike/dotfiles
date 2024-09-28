@@ -41,6 +41,9 @@ export default function NotificationPopups() {
         visible: true,
         margins: [ 10 ],
         exclusivity: "normal",
+        attribute: {
+            alwaysOpen: true
+        },
         child: Widget.Box({
             css: "min-width: 2px; min-height: 2px;",
             vertical: true,
