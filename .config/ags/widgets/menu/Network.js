@@ -21,7 +21,7 @@ async function connectToAccessPoint(accessPoint, password) {
     try {
         await Utils.execAsync(command);
     } catch (exception) {
-        Utils.execAsync(`notify-send "Connection failed" "Failed to connect to ${accessPoint}."`);
+        Utils.execAsync(`notify-send "Connection failed" "Failed to connect to ${accessPoint}: ${exception}"`);
     }
 
     connecting.value = false;
@@ -77,9 +77,9 @@ function NetworkList() {
         className: "network-networks",
         revealChild: opened.bind(),
         transition: "slide_down",
-        hexpand: true,
         child: Widget.Scrollable({
             className: "menu-list",
+            hscroll: "never",
             child: Widget.Box({
                 vertical: true,
                 className: "network-networks-list menu-option-toggle-list",
@@ -109,6 +109,7 @@ function NetworkListAccessPoint(accessPoint) {
         visibility: passwordVisible.bind(),
         sensitive: true,
         capsLockWarning: true,
+        maxWidthChars: 5,
         xalign: 0,
         onAccept: ({ text }) => connectToAccessPoint(accessPoint.ssid, text)
     });
@@ -138,37 +139,37 @@ function NetworkListAccessPoint(accessPoint) {
                     ]
                 })
             }),
-            Widget.Revealer({
-                revealChild: expandedAccessPoint.bind().as(expanded => expanded === accessPoint.ssid),
-                child: Widget.Box({
-                    className: "access-point-connect",
-                    vertical: true,
-                    children: [
-                        Widget.Separator(),
-                        Widget.Box({
-                            className: "access-point-connect-panel",
-                            children: [
-                                passwordField,
-                                Widget.Button({
-                                    className: "toggle-password-visibility",
-                                    onClicked: () => passwordVisible.value = !passwordVisible.value,
-                                    child: Widget.Icon({
-                                        className: "toggle-password-visibility-icon",
-                                        icon: `dialog-password-symbolic`
-                                    })
-                                })
-                            ]
-                        }),
-                        Widget.Button({
-                            className: "access-point-connect-button",
-                            onClicked: () => connectToAccessPoint(accessPoint.ssid, passwordField.text),
-                            child: Widget.Label({
-                                label: connecting.bind().as(_connecting => _connecting ? "Connecting..." : "Connect")
-                            })
-                        })
-                    ]
-                })
-            })
+            // Widget.Revealer({
+            //     revealChild: expandedAccessPoint.bind().as(expanded => expanded === accessPoint.ssid),
+            //     child: Widget.Box({
+            //         className: "access-point-connect",
+            //         vertical: true,
+            //         children: [
+            //             Widget.Separator(),
+            //             Widget.Box({
+            //                 className: "access-point-connect-panel",
+            //                 children: [
+            //                     passwordField,
+            //                     Widget.Button({
+            //                         className: "toggle-password-visibility",
+            //                         onClicked: () => passwordVisible.value = !passwordVisible.value,
+            //                         child: Widget.Icon({
+            //                             className: "toggle-password-visibility-icon",
+            //                             icon: passwordVisible.bind().as(show => show ? "password-show-on-symbolic" : "password-show-off-symbolic")
+            //                         })
+            //                     })
+            //                 ]
+            //             }),
+            //             Widget.Button({
+            //                 className: "access-point-connect-button",
+            //                 onClicked: () => connectToAccessPoint(accessPoint.ssid, passwordField.text),
+            //                 child: Widget.Label({
+            //                     label: connecting.bind().as(_connecting => _connecting ? "Connecting..." : "Connect")
+            //                 })
+            //             })
+            //         ]
+            //     })
+            // })
         ]
     });
 }

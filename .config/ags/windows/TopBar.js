@@ -10,12 +10,14 @@ import Workspaces from "../widgets/Workspaces.js";
 import NextEvent from "../widgets/NextEvent.js";
 import SystemTray from "../widgets/SystemTray.js";
 import calendarService from "../services/CalendarService.js";
+import NowPlaying from "../widgets/NowPlaying.js";
 
 const battery = await Service.import("battery");
 const tray = await Service.import("systemtray");
+const mpris = await Service.import("mpris");
 
 function Module(child, options = {}) {
-    const separator = Separator();
+    const separator = null;//Separator();
 
     return Widget.Box({
         visible: options.visible ?? true,
@@ -38,14 +40,28 @@ function BarLeft() {
         hpack: "start",
         children: [
             Module(Workspaces(), {
-                backSeparator: true
+                backSeparator: false
             }),
+            Module(NowPlaying(), {
+                frontSeparator: true,
+                backSeparator: false
+            }).hook(mpris, self => {
+                let visible = mpris.players.length;
+
+                if (mpris.players.filter(player => player.playBackStatus === "Playing").length === 0) {
+                    visible = false;
+                }
+
+                self.visible = visible;
+            }, "changed"),
             Module(NextEvent(), {
                 visible: calendarService.bind("hasCalendars"),
-                backSeparator: true
+                frontSeparator: true,
+                backSeparator: false
             }),
             Module(SystemTray(), {
                 visible: tray.bind("items").as(items => items.length > 0),
+                frontSeparator: true,
                 backSeparator: false
             })
         ]

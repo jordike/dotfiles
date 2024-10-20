@@ -1,0 +1,62 @@
+#players {
+    background-color: $background;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #202020;
+    color: $foreground;
+
+    .players-list {
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+
+    .players-container {
+        padding: 10px 20px;
+        padding-bottom: 0;
+
+        .players-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.player {
+    background-color: $moduleBackground;
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 350px;
+    margin-bottom: 10px;
+
+    &-image {
+        min-width: 100px;
+        min-height: 100px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 13px;
+        margin-right: 1em;
+    }
+
+    &-title {
+        font-size: 16px;
+        color: $foreground;
+    }
+
+    &-artist-label {
+        font-size: 14px;
+        color: darken($foreground, 15%);
+    }
+
+    &-app-icon {
+        font-size: 20px;
+        color: $color1;
+        margin-left: 10px;
+    }
+
+    &-button {
+        font-size: 16px;
+        margin: 0 5px;
+    }
+}

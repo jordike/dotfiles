@@ -25,12 +25,23 @@
 
 .update-overview-list-item {
     background-color: $moduleBackground;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 20px;
-    margin-bottom: 5px;
+
+    &-old-version {
+        color: rgba(255, 0, 0, 150);
+    }
+
+    &-new-version {
+        color: rgba(0, 255, 0, 150);
+    }
 }
 
 .update-overview-list-scrollable {
     min-height: 400px;
     min-width: 300px;
+}
+
+.no-updates-label {
+    color: #606060;
 }

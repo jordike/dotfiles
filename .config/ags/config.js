@@ -2,6 +2,7 @@ import Calendar from "./windows/Calendar.js";
 import Menu from "./windows/Menu.js";
 import NotificationOverview from "./windows/NotificationOverview.js";
 import NotificationPopups from "./windows/NotificationPopups.js";
+import Players from "./windows/Players.js";
 import TopBar from "./windows/TopBar.js";
 import UpdateOverview from "./windows/UpdateOverview.js";
 import VolumeChange from "./windows/VolumeChange.js";
@@ -14,6 +15,7 @@ App.config({
         NotificationOverview(),
         Menu(),
         Calendar(),
+        Players(),
         VolumeChange(),
         WeatherOverview(),
         UpdateOverview()

@@ -45,7 +45,7 @@ function WeatherWeekOverview() {
                         label: "icon"
                     }),
                     Widget.Label({
-                        label: forecast.minimumTemperature.minimum
+                        label: forecast.minimumTemperature.minimum.toString()
                     })
                 ]
             })

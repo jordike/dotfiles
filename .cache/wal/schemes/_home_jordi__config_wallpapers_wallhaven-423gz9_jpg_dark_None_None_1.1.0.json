@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/wallhaven-423gz9.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#031211",
+        "foreground": "#98b8ba",
+        "cursor": "#98b8ba"
+    },
+    "colors": {
+        "color0": "#031211",
+        "color1": "#0E5464",
+        "color2": "#106F6A",
+        "color3": "#515B55",
+        "color4": "#0C9773",
+        "color5": "#34AC78",
+        "color6": "#0BA787",
+        "color7": "#98b8ba",
+        "color8": "#6a8082",
+        "color9": "#0E5464",
+        "color10": "#106F6A",
+        "color11": "#515B55",
+        "color12": "#0C9773",
+        "color13": "#34AC78",
+        "color14": "#0BA787",
+        "color15": "#98b8ba"
+    }
+}

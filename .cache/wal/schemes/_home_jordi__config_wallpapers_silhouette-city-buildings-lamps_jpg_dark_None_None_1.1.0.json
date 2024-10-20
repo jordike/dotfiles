@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jordi/.config/wallpapers/silhouette-city-buildings-lamps.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c060c",
+        "foreground": "#b9acb8",
+        "cursor": "#b9acb8"
+    },
+    "colors": {
+        "color0": "#0c060c",
+        "color1": "#9E736C",
+        "color2": "#C47D49",
+        "color3": "#C78352",
+        "color4": "#CA8451",
+        "color5": "#4B3C81",
+        "color6": "#726188",
+        "color7": "#b9acb8",
+        "color8": "#817880",
+        "color9": "#9E736C",
+        "color10": "#C47D49",
+        "color11": "#C78352",
+        "color12": "#CA8451",
+        "color13": "#4B3C81",
+        "color14": "#726188",
+        "color15": "#b9acb8"
+    }
+}

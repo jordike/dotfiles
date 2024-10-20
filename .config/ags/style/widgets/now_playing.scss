@@ -1,0 +1,15 @@
+.now-playing {
+    background-color: $moduleBackground;
+    border-radius: 20px;
+    padding: 0 10px;
+
+    &-icon {
+        font-size: 20px;
+        margin-right: 10px;
+        color: $color1;
+    }
+
+    &-label {
+        color: $foreground;
+    }
+}

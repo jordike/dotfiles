@@ -1,18 +1,13 @@
 const pacmanUpdates = Variable([]);
 const aurUpdates = Variable([]);
-const updatingCounter = Variable(0);
 
 function refreshUpdates() {
-    updatingCounter.value += 2;
-
     Utils.execAsync("checkupdates").then(updates => {
         pacmanUpdates.value = parseUpdates(updates);
-        updatingCounter.value--;
     });
 
     Utils.execAsync("yay -Qum").then(updates => {
         aurUpdates.value = parseUpdates(updates);
-        updatingCounter.value--;
     });
 }
 
@@ -34,16 +29,16 @@ function parseUpdates(updates) {
 }
 
 function UpdateItem(update) {
-    return Widget.CenterBox({
+    return Widget.Box({
         className: "update-overview-list-item",
+        spacing: 15,
         children: [
             Widget.Label({
                 className: "update-overview-list-item-name",
                 label: update.name,
-                tooltipText: update.name,
             }),
             Widget.Box({
-                hexpand: true
+                hexpand: true,
             }),
             Widget.Label({
                 className: "update-overview-list-item-old-version",
@@ -79,14 +74,9 @@ export default function UpdateOverview() {
                     endWidget: Widget.Box({
                         hpack: "end",
                         children: [
-                            Widget.Spinner({
-                                active: updatingCounter.bind().as(counter => counter > 0),
-                                visible: updatingCounter.bind().as(counter => counter > 0)
-                            }),
                             Widget.Button({
                                 className: "update-overview-refresh",
                                 onClicked: () => refreshUpdates(),
-                                visible: updatingCounter.bind().as(counter => counter === 0),
                                 child: Widget.Icon({
                                     className: "update-overview-refresh-icon",
                                     icon: "view-refresh-symbolic"
@@ -98,31 +88,57 @@ export default function UpdateOverview() {
                 Widget.Separator(),
                 Widget.Scrollable({
                     className: "update-overview-list-scrollable",
+                    hscroll: "never",
                     child: Widget.Box({
                         vertical: true,
                         vexpand: true,
                         hexpand: true,
+                        spacing: 8,
                         children: [
                             Widget.Label({
                                 className: "update-overview-header",
-                                label: "Pacman",
+                                label: pacmanUpdates.bind().as(updates => `Pacman (${updates.length})`),
                                 xalign: 0
                             }),
                             Widget.Box({
                                 className: "update-overview-list",
                                 vertical: true,
-                                children: pacmanUpdates.bind().as(updates => updates.map(UpdateItem))
+                                spacing: 8,
+                                children: pacmanUpdates.bind().as(updates => {
+                                    if (updates.length === 0) {
+                                        return [ 
+                                            Widget.Label({
+                                                className: "no-updates-label",
+                                                label: "There are no updates."
+                                            })
+                                        ];
+                                    }
+
+                                    return updates.map(UpdateItem);
+                                })
                             }),
                             Widget.Separator(),
                             Widget.Label({
                                 className: "update-overview-header",
-                                label: "AUR",
+                                label: aurUpdates.bind().as(updates => `AUR (${updates.length})`),
                                 xalign: 0
                             }),
                             Widget.Box({
                                 className: "update-overview-list",
                                 vertical: true,
-                                children: aurUpdates.bind().as(updates => updates.map(UpdateItem))
+                                spacing: 8,
+                                children: aurUpdates.bind().as(updates => {
+                                    if (updates.length === 0) {
+                                        return [ 
+                                            Widget.Label({
+                                                className: "no-updates-label",
+                                                label: "There are no updates."
+                                            })
+                                        ];
+                                    }
+
+                                    return updates.map(UpdateItem);
+                                })
                             })
                         ]
                     })

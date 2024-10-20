@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/jordi/.config/wallpapers/wallpaper_111.jpg",
+    "wallpaper": "/home/jordi/.config/wallpapers/photo-1475257026007-0753d5429e10.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#0d0c12",
-        "foreground": "#f0c4bf",
-        "cursor": "#f0c4bf"
+        "background": "#0D0E10",
+        "foreground": "#c1bebf",
+        "cursor": "#c1bebf"
     },
     "colors": {
-        "color0": "#0d0c12",
-        "color1": "#98354A",
-        "color2": "#CC3852",
-        "color3": "#A84959",
-        "color4": "#DE5E66",
-        "color5": "#F0867B",
-        "color6": "#E67D82",
-        "color7": "#f0c4bf",
-        "color8": "#a88985",
-        "color9": "#98354A",
-        "color10": "#CC3852",
-        "color11": "#A84959",
-        "color12": "#DE5E66",
-        "color13": "#F0867B",
-        "color14": "#E67D82",
-        "color15": "#f0c4bf"
+        "color0": "#0D0E10",
+        "color1": "#1C6D57",
+        "color2": "#4D4D4E",
+        "color3": "#635D5E",
+        "color4": "#706B6C",
+        "color5": "#847A7B",
+        "color6": "#867E81",
+        "color7": "#c1bebf",
+        "color8": "#878585",
+        "color9": "#1C6D57",
+        "color10": "#4D4D4E",
+        "color11": "#635D5E",
+        "color12": "#706B6C",
+        "color13": "#847A7B",
+        "color14": "#867E81",
+        "color15": "#c1bebf"
     }
 }

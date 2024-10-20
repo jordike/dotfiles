@@ -1,12 +1,11 @@
-const cpu = Variable("", {
-    poll: [5000, "/home/jordi/.config/hypr/scripts/cpu_usage.sh"]
-});
+const divide = ([total, free]) => free / total
 
-function formatCpuUsage(usage) {
-    const usageNumber = parseInt(usage);
-
-    return `${usageNumber.toFixed(1)}%`;
-}
+const cpu = Variable(0, {
+    poll: [5000, 'top -b -n 1', out => divide([100, out.split('\n')
+        .find(line => line.includes('Cpu(s)'))
+        .split(/\s+/)[1]
+        .replace(',', '.')])],
+})
 
 export default function Cpu() {
     return Widget.Box({
@@ -16,9 +15,11 @@ export default function Cpu() {
                 className: "system-statistic-icon icon",
                 icon: "computer-symbolic"
             }),
-            Widget.Label({
-                className: "system-statistic-label",
-                label: cpu.bind().as(usage => formatCpuUsage(usage))
+            Widget.CircularProgress({
+                className: "stat-progress",
+                label: cpu.bind(),
+                startAt: 0.75,
+                rounded: false
             })
         ]
     });

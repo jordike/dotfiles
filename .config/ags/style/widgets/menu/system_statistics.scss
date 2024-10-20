@@ -24,3 +24,11 @@
         color: lighten($background, 30%);
     }
 }
+
+.stat-progress {
+    background-color: lighten($moduleBackground, 50%);
+    color: $color1;
+    font-size: 6px;
+    min-width: 25px;
+    min-height: 25px;
+}

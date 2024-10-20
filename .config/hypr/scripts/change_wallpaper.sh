@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Change wallpaper using swww.
 swww img $1 --transition-fps 60 --transition-type any --transition-duration 1
 
